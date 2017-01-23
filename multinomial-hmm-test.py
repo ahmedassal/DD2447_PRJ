@@ -20,6 +20,7 @@ model.emissionprob_ = np.array([
 
 # predict a sequence of hidden states based on visible states
 bob_says = np.array([[0, 2, 1, 1, 2, 0]]).T
+bob_says = np.array([['A', 'C', 'B', 1, 2, 0]]).T
 
 model = model.fit(bob_says)
 logprob, alice_hears = model.decode(bob_says, algorithm="viterbi")

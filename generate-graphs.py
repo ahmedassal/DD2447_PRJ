@@ -36,7 +36,7 @@ CONSTATS
 MAX_EDGES_PER_VERTEX = 3
 GRAPH_DIM = 3
 TARGET_VERTICES_COUNT = pow(GRAPH_DIM, 2)
-LABELS = ['O', 'R', 'L']
+LABELS = ['L', 'O', 'R' ]
 SWITCHES_VALUES = ['R', 'L']
 
 
@@ -325,6 +325,11 @@ if __name__ == "__main__":
   multiGraph = set_switches(multiGraph, SWITCHES_VALUES)
 
   nx.write_gml(multiGraph, "graph.gml")
+  df = nx.to_pandas_dataframe(multiGraph)
+  print('########################## Daniel')
+  print(df)
+  # pd.DataFrame.to_csv("graph.csv", sep=',')
+
   observations = simulate(multiGraph, 10)
   print(observations)
   visualize_graph(multiGraph)

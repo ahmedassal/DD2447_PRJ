@@ -2,86 +2,86 @@ graph [
   name "grid_graph([3, 3])"
   node [
     id 0
-    label "Port Theresaside"
-    switch "L"
+    label "Sandersberg"
+    switch "R"
   ]
   node [
     id 1
-    label "Port Sheilashire"
+    label "West Amber"
     switch "R"
   ]
   node [
     id 2
-    label "Drakefurt"
-    switch "L"
+    label "Laurenton"
+    switch "R"
   ]
   node [
     id 3
-    label "West Kimberly"
-    switch "R"
+    label "Port Monicafurt"
+    switch "L"
   ]
   node [
     id 4
-    label "Nicholasmouth"
-    switch "R"
+    label "Frederickbury"
+    switch "L"
   ]
   node [
     id 5
-    label "Lake Amanda"
+    label "New William"
     switch "L"
   ]
   edge [
     source 0
-    target 1
-    label1 "O"
-    label2 "O"
-  ]
-  edge [
-    source 0
-    target 5
-    label1 "L"
-    label2 "R"
-  ]
-  edge [
-    source 0
-    target 3
-    label1 "R"
-    label2 "L"
-  ]
-  edge [
-    source 1
-    target 3
-    label1 "L"
-    label2 "?"
-  ]
-  edge [
-    source 1
     target 2
+    label2 "L"
     label1 "R"
-    label2 "?"
   ]
   edge [
-    source 2
-    target 5
-    label1 "R"
+    source 0
+    target 4
+    label2 "R"
+    label1 "O"
+  ]
+  edge [
+    source 0
+    target 3
     label2 "O"
+    label1 "L"
+  ]
+  edge [
+    source 1
+    target 3
+    label2 "R"
+    label1 "R"
+  ]
+  edge [
+    source 1
+    target 4
+    label2 "L"
+    label1 "L"
+  ]
+  edge [
+    source 1
+    target 5
+    label2 "O"
+    label1 "O"
   ]
   edge [
     source 2
     target 4
-    label1 "L"
+    label2 "O"
+    label1 "R"
+  ]
+  edge [
+    source 2
+    target 5
     label2 "L"
+    label1 "?"
   ]
   edge [
     source 3
-    target 4
-    label1 "R"
-    label2 "?"
-  ]
-  edge [
-    source 4
     target 5
-    label1 "O"
     label2 "?"
+    label1 "L"
   ]
 ]
