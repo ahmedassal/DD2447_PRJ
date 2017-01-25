@@ -1,0 +1,215 @@
+2017-01-25 22:51:25,482 generate-graphs, line 478 INFO Experiment# 2
+2017-01-25 22:51:25,482 generate-graphs, line 480 INFO dim 5
+2017-01-25 22:51:25,505 generate-graphs, line 126 INFO ### Graph generation started ==>
+2017-01-25 22:51:25,508 generate-graphs, line 173 INFO ### Graph generation ended ==<
+2017-01-25 22:51:25,508 generate-graphs, line 91 INFO Degree sequence [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+2017-01-25 22:51:25,508 generate-graphs, line 92 INFO Degree histogram
+2017-01-25 22:51:25,508 generate-graphs, line 99 INFO degree #nodes
+2017-01-25 22:51:25,508 generate-graphs, line 101 INFO 3 30
+2017-01-25 22:51:25,508 generate-graphs, line 183 INFO ### Labels setting started ==>
+2017-01-25 22:51:25,508 generate-graphs, line 229 INFO {('South Meghanview', 'West Michael'): 'R', ('South Meghanview', 'Hernandezton'): 'O', ('South Meghanview', 'Farrellton'): 'L'}
+2017-01-25 22:51:25,509 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,509 generate-graphs, line 229 INFO {('Lake Diana', 'West Paulburgh'): 'L', ('Lake Diana', 'Lake Andrew'): 'O', ('Lake Diana', 'Holthaven'): 'R'}
+2017-01-25 22:51:25,509 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,509 generate-graphs, line 229 INFO {('West Michael', 'Salastown'): 'R', ('West Michael', 'South Meghanview'): 'O', ('West Michael', 'West Russell'): 'L'}
+2017-01-25 22:51:25,509 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,509 generate-graphs, line 229 INFO {('New Ashley', 'Sandersfurt'): 'R', ('New Ashley', 'Holthaven'): 'O', ('New Ashley', 'Lake Andrew'): 'L'}
+2017-01-25 22:51:25,509 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,509 generate-graphs, line 229 INFO {('East Kimberly', 'East Carlaview'): 'O', ('East Kimberly', 'Michaelland'): 'R', ('East Kimberly', 'Ramirezmouth'): 'L'}
+2017-01-25 22:51:25,509 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,509 generate-graphs, line 229 INFO {('Michaelland', 'Kingside'): 'L', ('Michaelland', 'Port Williammouth'): 'O', ('Michaelland', 'East Kimberly'): 'R'}
+2017-01-25 22:51:25,510 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,510 generate-graphs, line 229 INFO {('Briannafurt', 'New Eddieborough'): 'O', ('Briannafurt', 'North Pennyton'): 'L', ('Briannafurt', 'Phillipston'): 'R'}
+2017-01-25 22:51:25,510 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,510 generate-graphs, line 229 INFO {('Lake Darryl', 'Farrellton'): 'R', ('Lake Darryl', 'Hernandezton'): 'L', ('Lake Darryl', 'Markton'): 'O'}
+2017-01-25 22:51:25,510 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,510 generate-graphs, line 229 INFO {('Port Williammouth', 'Michaelland'): 'R', ('Port Williammouth', 'Cainton'): 'O', ('Port Williammouth', 'Phillipston'): 'L'}
+2017-01-25 22:51:25,510 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,510 generate-graphs, line 229 INFO {('Lake Andrew', 'West Russell'): 'O', ('Lake Andrew', 'Lake Diana'): 'R', ('Lake Andrew', 'New Ashley'): 'L'}
+2017-01-25 22:51:25,510 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,510 generate-graphs, line 229 INFO {('Port Steven', 'Farrellton'): 'R', ('Port Steven', 'East Carlaview'): 'O', ('Port Steven', 'Watkinsborough'): 'L'}
+2017-01-25 22:51:25,511 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,511 generate-graphs, line 229 INFO {('Pricefort', 'West Paulburgh'): 'R', ('Pricefort', 'New Eddieborough'): 'L', ('Pricefort', 'Sandersfurt'): 'O'}
+2017-01-25 22:51:25,511 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,511 generate-graphs, line 229 INFO {('Hernandezton', 'Lake Darryl'): 'O', ('Hernandezton', 'South Meghanview'): 'R', ('Hernandezton', 'Salastown'): 'L'}
+2017-01-25 22:51:25,511 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,511 generate-graphs, line 229 INFO {('Watkinsborough', 'Gainesport'): 'L', ('Watkinsborough', 'Port Steven'): 'R', ('Watkinsborough', 'Markton'): 'O'}
+2017-01-25 22:51:25,511 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,511 generate-graphs, line 229 INFO {('Davidville', 'Ramirezmouth'): 'L', ('Davidville', 'Markton'): 'R', ('Davidville', 'East Carlaview'): 'O'}
+2017-01-25 22:51:25,511 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,511 generate-graphs, line 229 INFO {('West Russell', 'Kingside'): 'L', ('West Russell', 'Lake Andrew'): 'O', ('West Russell', 'West Michael'): 'R'}
+2017-01-25 22:51:25,512 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,512 generate-graphs, line 229 INFO {('Gainesport', 'West Paulburgh'): 'L', ('Gainesport', 'Watkinsborough'): 'R', ('Gainesport', 'Kingside'): 'O'}
+2017-01-25 22:51:25,512 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,512 generate-graphs, line 229 INFO {('Holthaven', 'Salastown'): 'R', ('Holthaven', 'New Ashley'): 'L', ('Holthaven', 'Lake Diana'): 'O'}
+2017-01-25 22:51:25,512 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,512 generate-graphs, line 229 INFO {('North Pennyton', 'Sandersfurt'): 'L', ('North Pennyton', 'Cainton'): 'R', ('North Pennyton', 'Briannafurt'): 'O'}
+2017-01-25 22:51:25,512 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,512 generate-graphs, line 229 INFO {('Ramirezmouth', 'East Kimberly'): 'L', ('Ramirezmouth', 'Phillipston'): 'R', ('Ramirezmouth', 'Davidville'): 'O'}
+2017-01-25 22:51:25,512 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,512 generate-graphs, line 229 INFO {('New Eddieborough', 'Cainton'): 'R', ('New Eddieborough', 'Pricefort'): 'O', ('New Eddieborough', 'Briannafurt'): 'L'}
+2017-01-25 22:51:25,513 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,513 generate-graphs, line 229 INFO {('Sandersfurt', 'New Ashley'): 'O', ('Sandersfurt', 'North Pennyton'): 'R', ('Sandersfurt', 'Pricefort'): 'L'}
+2017-01-25 22:51:25,513 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,513 generate-graphs, line 229 INFO {('Salastown', 'West Michael'): 'L', ('Salastown', 'Holthaven'): 'R', ('Salastown', 'Hernandezton'): 'O'}
+2017-01-25 22:51:25,513 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,513 generate-graphs, line 229 INFO {('Phillipston', 'Port Williammouth'): 'R', ('Phillipston', 'Ramirezmouth'): 'O', ('Phillipston', 'Briannafurt'): 'L'}
+2017-01-25 22:51:25,513 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,513 generate-graphs, line 229 INFO {('East Carlaview', 'Davidville'): 'L', ('East Carlaview', 'Port Steven'): 'O', ('East Carlaview', 'East Kimberly'): 'R'}
+2017-01-25 22:51:25,513 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,513 generate-graphs, line 229 INFO {('Markton', 'Watkinsborough'): 'O', ('Markton', 'Davidville'): 'L', ('Markton', 'Lake Darryl'): 'R'}
+2017-01-25 22:51:25,514 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,514 generate-graphs, line 229 INFO {('West Paulburgh', 'Gainesport'): 'R', ('West Paulburgh', 'Lake Diana'): 'L', ('West Paulburgh', 'Pricefort'): 'O'}
+2017-01-25 22:51:25,514 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,514 generate-graphs, line 229 INFO {('Cainton', 'Port Williammouth'): 'L', ('Cainton', 'North Pennyton'): 'R', ('Cainton', 'New Eddieborough'): 'O'}
+2017-01-25 22:51:25,514 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,514 generate-graphs, line 229 INFO {('Farrellton', 'Lake Darryl'): 'R', ('Farrellton', 'Port Steven'): 'O', ('Farrellton', 'South Meghanview'): 'L'}
+2017-01-25 22:51:25,514 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,514 generate-graphs, line 229 INFO {('Kingside', 'Gainesport'): 'L', ('Kingside', 'Michaelland'): 'O', ('Kingside', 'West Russell'): 'R'}
+2017-01-25 22:51:25,514 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:25,515 generate-graphs, line 384 INFO ### Switches setting started ==>
+2017-01-25 22:51:25,515 generate-graphs, line 386 INFO {'South Meghanview': 'R', 'Lake Diana': 'R', 'Davidville': 'L', 'West Michael': 'L', 'Gainesport': 'L', 'New Ashley': 'R', 'Holthaven': 'R', 'North Pennyton': 'R', 'Ramirezmouth': 'R', 'Port Steven': 'L', 'East Kimberly': 'L', 'Michaelland': 'L', 'Briannafurt': 'L', 'New Eddieborough': 'L', 'Kingside': 'R', 'Sandersfurt': 'L', 'Salastown': 'R', 'Lake Darryl': 'R', 'Phillipston': 'R', 'Port Williammouth': 'R', 'Markton': 'L', 'Lake Andrew': 'R', 'West Paulburgh': 'R', 'Cainton': 'R', 'Farrellton': 'L', 'Watkinsborough': 'R', 'Pricefort': 'L', 'Hernandezton': 'L', 'West Russell': 'R', 'East Carlaview': 'L'}
+2017-01-25 22:51:25,515 generate-graphs, line 388 INFO ### Switches setting ended ==<
+2017-01-25 22:51:25,521 generate-graphs, line 493 ERROR Unable to write file sim-419773-170125-225120-exp-2.gml
+2017-01-25 22:51:25,521 generate-graphs, line 395 INFO ### Simulation started ==>
+2017-01-25 22:51:25,521 generate-graphs, line 401 INFO timestep: 0
+2017-01-25 22:51:25,521 generate-graphs, line 405 INFO visited node: Port Williammouth
+2017-01-25 22:51:25,521 generate-graphs, line 411 INFO timestep: 1
+2017-01-25 22:51:25,522 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: Phillipston
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: Cainton
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: Michaelland
+2017-01-25 22:51:25,522 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,522 generate-graphs, line 442 INFO visited node: Michaelland
+2017-01-25 22:51:25,522 generate-graphs, line 411 INFO timestep: 2
+2017-01-25 22:51:25,522 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: East Kimberly
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: Port Williammouth
+2017-01-25 22:51:25,522 generate-graphs, line 420 INFO considered node: Kingside
+2017-01-25 22:51:25,522 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,523 generate-graphs, line 442 INFO visited node: Kingside
+2017-01-25 22:51:25,523 generate-graphs, line 411 INFO timestep: 3
+2017-01-25 22:51:25,523 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,523 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,523 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,523 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,523 generate-graphs, line 411 INFO timestep: 4
+2017-01-25 22:51:25,523 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,523 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,523 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,523 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,523 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,523 generate-graphs, line 411 INFO timestep: 5
+2017-01-25 22:51:25,524 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,524 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,524 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,524 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,524 generate-graphs, line 411 INFO timestep: 6
+2017-01-25 22:51:25,524 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,524 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,524 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,524 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,524 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,524 generate-graphs, line 411 INFO timestep: 7
+2017-01-25 22:51:25,524 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,525 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,525 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,525 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,525 generate-graphs, line 411 INFO timestep: 8
+2017-01-25 22:51:25,525 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,525 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,525 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,525 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,525 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,525 generate-graphs, line 411 INFO timestep: 9
+2017-01-25 22:51:25,525 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,525 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,526 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,526 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,526 generate-graphs, line 411 INFO timestep: 10
+2017-01-25 22:51:25,526 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,526 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,526 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,526 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,526 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,526 generate-graphs, line 411 INFO timestep: 11
+2017-01-25 22:51:25,526 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,526 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,526 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,526 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,527 generate-graphs, line 411 INFO timestep: 12
+2017-01-25 22:51:25,527 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,527 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,527 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,527 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,527 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,527 generate-graphs, line 411 INFO timestep: 13
+2017-01-25 22:51:25,527 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,527 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,527 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,527 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,527 generate-graphs, line 411 INFO timestep: 14
+2017-01-25 22:51:25,528 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,528 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,528 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,528 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,528 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,528 generate-graphs, line 411 INFO timestep: 15
+2017-01-25 22:51:25,528 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,528 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,528 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,528 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,528 generate-graphs, line 411 INFO timestep: 16
+2017-01-25 22:51:25,528 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,528 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,529 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,529 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,529 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,529 generate-graphs, line 411 INFO timestep: 17
+2017-01-25 22:51:25,529 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,529 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,529 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,529 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,529 generate-graphs, line 411 INFO timestep: 18
+2017-01-25 22:51:25,529 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,529 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,529 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,530 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,530 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,530 generate-graphs, line 411 INFO timestep: 19
+2017-01-25 22:51:25,530 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,530 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,530 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,530 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,530 generate-graphs, line 411 INFO timestep: 20
+2017-01-25 22:51:25,530 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,530 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,530 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,530 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,531 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,531 generate-graphs, line 411 INFO timestep: 21
+2017-01-25 22:51:25,531 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,531 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,531 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,531 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,531 generate-graphs, line 411 INFO timestep: 22
+2017-01-25 22:51:25,531 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,531 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,531 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,531 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,531 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,531 generate-graphs, line 411 INFO timestep: 23
+2017-01-25 22:51:25,532 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:25,532 generate-graphs, line 420 INFO considered node: West Russell
+2017-01-25 22:51:25,532 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:25,532 generate-graphs, line 442 INFO visited node: West Russell
+2017-01-25 22:51:25,532 generate-graphs, line 411 INFO timestep: 24
+2017-01-25 22:51:25,532 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:25,532 generate-graphs, line 420 INFO considered node: Lake Andrew
+2017-01-25 22:51:25,532 generate-graphs, line 420 INFO considered node: West Michael
+2017-01-25 22:51:25,532 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:25,532 generate-graphs, line 442 INFO visited node: West Michael
+2017-01-25 22:51:25,532 generate-graphs, line 446 INFO observations: ['R', 'L', 'R', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R']
+2017-01-25 22:51:25,542 generate-graphs, line 456 INFO ### Simulation ended ==<
+2017-01-25 22:51:25,542 generate-graphs, line 105 INFO ### Graph plotting started ==>
+2017-01-25 22:51:26,846 generate-graphs, line 120 INFO ### Graph plotting ended ==<

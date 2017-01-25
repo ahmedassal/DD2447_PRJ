@@ -100,22 +100,30 @@ def compute_histogram(graph, logger):
   for d in hist:
     logger.info('%d %d' % (d, hist[d]))
 
-def visualize_graph(graph):
-  # nx.draw(graph, with_labels = True)
-  # graph_pos = nx.shell_layout(graph)
-  graph_pos = nx.spring_layout(graph)
-  # graph_pos = nx.spectral_layout(graph)
-  # nx.draw(graph, pos=nx.spring_layout(graph))
-  # nx.draw_networkx_labels(graph, pos=nx.spring_layout(graph))
+def visualize_graph(graph, graphsFolder, experimentName, logger):
+  try:
+    logger.info("### Graph plotting started ==>")
+    # nx.draw(graph, with_labels = True)
+    # graph_pos = nx.shell_layout(graph)
+    graph_pos = nx.spring_layout(graph)
+    # graph_pos = nx.spectral_layout(graph)
+    # nx.draw(graph, pos=nx.spring_layout(graph))
+    # nx.draw_networkx_labels(graph, pos=nx.spring_layout(graph))
 
-  nx.draw_networkx_nodes(graph, graph_pos, node_size=1000, node_color='blue', alpha=0.3)
-  # nx.draw_networkx_node_labels(graph, graph_pos)
-  nx.draw_networkx_edges(graph, graph_pos)
-  nx.draw_networkx_edge_labels(graph, graph_pos)
-  nx.draw_networkx_labels(graph, graph_pos, font_size=12, font_family='sans-serif')
-  plt.show()
+    nx.draw_networkx_nodes(graph, graph_pos, node_size=1000, node_color='blue', alpha=0.3)
+    # nx.draw_networkx_node_labels(graph, graph_pos)
+    nx.draw_networkx_edges(graph, graph_pos)
+    nx.draw_networkx_edge_labels(graph, graph_pos)
+    nx.draw_networkx_labels(graph, graph_pos, font_size=12, font_family='sans-serif')
+    plt.title(experimentName)
+    plt.show()
+    plt.savefig("{0}/{1}.png".format(graphsFolder, experimentName))
+    logger.info("### Graph plotting ended ==<")
+  except:
+    logger.error("### Graph is empty !!!!")
 
-def generate_graph(labels, dim, logger):
+
+def create_graph(labels, dim, logger):
   logger.info("### Graph generation started ==>")
   # G = nx.grid_graph([GRAPH_DIM, GRAPH_DIM])
   G = nx.grid_2d_graph(dim, dim)
@@ -460,6 +468,7 @@ if __name__ == "__main__":
   logsFolder='logs'
   networksFolder = 'networks'
   observationsFolder = 'observations'
+  graphsFolder  = 'graphs'
 
   n_run = np.random.choice(range(1000000))
   timestr = time.strftime("%y%m%d-%H%M%S")
@@ -473,7 +482,7 @@ if __name__ == "__main__":
     current_n_target_vertices = pow(current_dim, 2)
     current_timesteps_count = current_n_target_vertices
     cities = create_fake_cities(fake, 2 * current_n_target_vertices)
-    graph = generate_graph(cities, current_dim, log)
+    graph = create_graph(cities, current_dim, log)
     compute_histogram(graph,log)
     graph = label_graph(graph, LABELS, log)
     graph = set_switches(graph, SWITCHES_VALUES, log)
@@ -487,7 +496,7 @@ if __name__ == "__main__":
     observations = simulate(graph, current_timesteps_count, \
                             observationsFolder=observationsFolder, observationsFilename=simultionName, logger=log)
     # print(observations)
-    # visualize_graph(graph, log)
+    visualize_graph(graph, graphsFolder, simultionName, log)
 
 
     # close logger

@@ -2,84 +2,84 @@ graph [
   name "grid_2d_graph"
   node [
     id 0
-    label "New Stacy"
-    sw "L"
+    label "North Cheyenne"
+    sw "R"
   ]
   node [
     id 1
-    label "Montgomeryshire"
+    label "Jacquelinechester"
     sw "L"
   ]
   node [
     id 2
-    label "Port Cynthiashire"
+    label "Rodriguezville"
     sw "R"
   ]
   node [
     id 3
-    label "Aliciastad"
+    label "Stacyland"
     sw "L"
   ]
   node [
     id 4
-    label "Susanborough"
+    label "South Maureen"
     sw "L"
   ]
   node [
     id 5
-    label "Robinsonmouth"
-    sw "R"
+    label "South Joseph"
+    sw "L"
   ]
   node [
     id 6
-    label "Elizabethfurt"
+    label "Fuenteschester"
     sw "R"
   ]
   node [
     id 7
-    label "Parkertown"
+    label "Ashleyburgh"
     sw "L"
   ]
   node [
     id 8
-    label "Jaimeport"
-    sw "R"
+    label "Manuelmouth"
+    sw "L"
   ]
   node [
     id 9
-    label "Port Matthewborough"
+    label "West Zacharychester"
     sw "R"
   ]
   node [
     id 10
-    label "New Laurentown"
+    label "Barkerfort"
     sw "L"
   ]
   node [
     id 11
-    label "Lake Lori"
+    label "Lake Heathermouth"
     sw "L"
   ]
   node [
     id 12
-    label "Reyesburgh"
-    sw "L"
+    label "Nealberg"
+    sw "R"
   ]
   node [
     id 13
-    label "South Sierramouth"
+    label "West Robertaberg"
     sw "L"
   ]
   node [
     id 14
-    label "Blevinsstad"
+    label "North Alecshire"
     sw "R"
   ]
   node [
     id 15
-    label "Morganberg"
+    label "Johnsonburgh"
     sw "R"
   ]
   edge [
     source 0
-    target 10
+    target 9

@@ -1,0 +1,148 @@
+2017-01-25 22:51:20,768 generate-graphs, line 478 INFO Experiment# 0
+2017-01-25 22:51:20,768 generate-graphs, line 480 INFO dim 4
+2017-01-25 22:51:20,783 generate-graphs, line 126 INFO ### Graph generation started ==>
+2017-01-25 22:51:20,784 generate-graphs, line 173 INFO ### Graph generation ended ==<
+2017-01-25 22:51:20,784 generate-graphs, line 91 INFO Degree sequence [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+2017-01-25 22:51:20,785 generate-graphs, line 92 INFO Degree histogram
+2017-01-25 22:51:20,785 generate-graphs, line 99 INFO degree #nodes
+2017-01-25 22:51:20,785 generate-graphs, line 101 INFO 3 16
+2017-01-25 22:51:20,785 generate-graphs, line 183 INFO ### Labels setting started ==>
+2017-01-25 22:51:20,785 generate-graphs, line 229 INFO {('Christopherville', 'Port Amy'): 'L', ('Christopherville', 'Danielview'): 'R', ('Christopherville', 'New William'): 'O'}
+2017-01-25 22:51:20,785 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,785 generate-graphs, line 229 INFO {('Hendersonmouth', 'West Aaronburgh'): 'R', ('Hendersonmouth', 'Danielview'): 'O', ('Hendersonmouth', 'Priceton'): 'L'}
+2017-01-25 22:51:20,785 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,785 generate-graphs, line 229 INFO {('West Aaronburgh', 'North Aprilfurt'): 'O', ('West Aaronburgh', 'Hendersonmouth'): 'R', ('West Aaronburgh', 'Alyssaberg'): 'L'}
+2017-01-25 22:51:20,786 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,786 generate-graphs, line 229 INFO {('Meyermouth', 'East Sydneyport'): 'O', ('Meyermouth', 'Port Kathyberg'): 'R', ('Meyermouth', 'Alyssaberg'): 'L'}
+2017-01-25 22:51:20,786 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,786 generate-graphs, line 229 INFO {('Serranofurt', 'Bradmouth'): 'R', ('Serranofurt', 'East Patricialand'): 'L', ('Serranofurt', 'Alyssaberg'): 'O'}
+2017-01-25 22:51:20,786 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,786 generate-graphs, line 229 INFO {('Port Kathyberg', 'East Sydneyport'): 'R', ('Port Kathyberg', 'Meyermouth'): 'L', ('Port Kathyberg', 'North Aprilfurt'): 'O'}
+2017-01-25 22:51:20,786 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,786 generate-graphs, line 229 INFO {('Alyssaberg', 'Meyermouth'): 'O', ('Alyssaberg', 'West Aaronburgh'): 'R', ('Alyssaberg', 'Serranofurt'): 'L'}
+2017-01-25 22:51:20,786 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,786 generate-graphs, line 229 INFO {('New William', 'Bradmouth'): 'L', ('New William', 'Christopherville'): 'R', ('New William', 'Priceton'): 'O'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,787 generate-graphs, line 229 INFO {('Danielview', 'North Aprilfurt'): 'L', ('Danielview', 'Hendersonmouth'): 'O', ('Danielview', 'Christopherville'): 'R'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,787 generate-graphs, line 229 INFO {('East Sydneyport', 'Meyermouth'): 'L', ('East Sydneyport', 'Chenstad'): 'R', ('East Sydneyport', 'Port Kathyberg'): 'O'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,787 generate-graphs, line 229 INFO {('Priceton', 'Port Amy'): 'L', ('Priceton', 'Hendersonmouth'): 'O', ('Priceton', 'New William'): 'R'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,787 generate-graphs, line 229 INFO {('Chenstad', 'Bradmouth'): 'R', ('Chenstad', 'East Sydneyport'): 'L', ('Chenstad', 'East Patricialand'): 'O'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,787 generate-graphs, line 229 INFO {('Bradmouth', 'Chenstad'): 'R', ('Bradmouth', 'New William'): 'O', ('Bradmouth', 'Serranofurt'): 'L'}
+2017-01-25 22:51:20,787 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,788 generate-graphs, line 229 INFO {('East Patricialand', 'Serranofurt'): 'L', ('East Patricialand', 'Port Amy'): 'O', ('East Patricialand', 'Chenstad'): 'R'}
+2017-01-25 22:51:20,788 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,788 generate-graphs, line 229 INFO {('Port Amy', 'East Patricialand'): 'O', ('Port Amy', 'Priceton'): 'L', ('Port Amy', 'Christopherville'): 'R'}
+2017-01-25 22:51:20,788 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,788 generate-graphs, line 229 INFO {('North Aprilfurt', 'Danielview'): 'L', ('North Aprilfurt', 'West Aaronburgh'): 'R', ('North Aprilfurt', 'Port Kathyberg'): 'O'}
+2017-01-25 22:51:20,788 generate-graphs, line 230 INFO {}
+2017-01-25 22:51:20,788 generate-graphs, line 384 INFO ### Switches setting started ==>
+2017-01-25 22:51:20,789 generate-graphs, line 386 INFO {'Port Kathyberg': 'L', 'Bradmouth': 'R', 'Christopherville': 'L', 'Danielview': 'L', 'Hendersonmouth': 'R', 'New William': 'L', 'Meyermouth': 'L', 'East Patricialand': 'R', 'Port Amy': 'R', 'East Sydneyport': 'R', 'Priceton': 'R', 'West Aaronburgh': 'L', 'North Aprilfurt': 'R', 'Alyssaberg': 'L', 'Serranofurt': 'L', 'Chenstad': 'R'}
+2017-01-25 22:51:20,789 generate-graphs, line 388 INFO ### Switches setting ended ==<
+2017-01-25 22:51:20,795 generate-graphs, line 493 ERROR Unable to write file sim-419773-170125-225120-exp-0.gml
+2017-01-25 22:51:20,795 generate-graphs, line 395 INFO ### Simulation started ==>
+2017-01-25 22:51:20,795 generate-graphs, line 401 INFO timestep: 0
+2017-01-25 22:51:20,795 generate-graphs, line 405 INFO visited node: North Aprilfurt
+2017-01-25 22:51:20,796 generate-graphs, line 411 INFO timestep: 1
+2017-01-25 22:51:20,796 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,796 generate-graphs, line 420 INFO considered node: West Aaronburgh
+2017-01-25 22:51:20,796 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,796 generate-graphs, line 442 INFO visited node: West Aaronburgh
+2017-01-25 22:51:20,796 generate-graphs, line 411 INFO timestep: 2
+2017-01-25 22:51:20,796 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:20,796 generate-graphs, line 420 INFO considered node: North Aprilfurt
+2017-01-25 22:51:20,796 generate-graphs, line 420 INFO considered node: Hendersonmouth
+2017-01-25 22:51:20,796 generate-graphs, line 420 INFO considered node: Alyssaberg
+2017-01-25 22:51:20,796 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:20,796 generate-graphs, line 442 INFO visited node: Alyssaberg
+2017-01-25 22:51:20,796 generate-graphs, line 411 INFO timestep: 3
+2017-01-25 22:51:20,797 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:20,797 generate-graphs, line 420 INFO considered node: West Aaronburgh
+2017-01-25 22:51:20,797 generate-graphs, line 420 INFO considered node: Meyermouth
+2017-01-25 22:51:20,797 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,797 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:20,797 generate-graphs, line 442 INFO visited node: Serranofurt
+2017-01-25 22:51:20,797 generate-graphs, line 411 INFO timestep: 4
+2017-01-25 22:51:20,797 generate-graphs, line 416 INFO switch setting: L
+2017-01-25 22:51:20,797 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,797 generate-graphs, line 437 INFO edge label: L
+2017-01-25 22:51:20,797 generate-graphs, line 442 INFO visited node: East Patricialand
+2017-01-25 22:51:20,797 generate-graphs, line 411 INFO timestep: 5
+2017-01-25 22:51:20,798 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,798 generate-graphs, line 420 INFO considered node: Port Amy
+2017-01-25 22:51:20,798 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,798 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,798 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,798 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,798 generate-graphs, line 411 INFO timestep: 6
+2017-01-25 22:51:20,798 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,798 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,798 generate-graphs, line 420 INFO considered node: Bradmouth
+2017-01-25 22:51:20,798 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,798 generate-graphs, line 442 INFO visited node: Bradmouth
+2017-01-25 22:51:20,799 generate-graphs, line 411 INFO timestep: 7
+2017-01-25 22:51:20,799 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,799 generate-graphs, line 420 INFO considered node: New William
+2017-01-25 22:51:20,799 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,799 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,799 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,799 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,799 generate-graphs, line 411 INFO timestep: 8
+2017-01-25 22:51:20,799 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,799 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,799 generate-graphs, line 420 INFO considered node: Bradmouth
+2017-01-25 22:51:20,799 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,799 generate-graphs, line 442 INFO visited node: Bradmouth
+2017-01-25 22:51:20,800 generate-graphs, line 411 INFO timestep: 9
+2017-01-25 22:51:20,800 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,800 generate-graphs, line 420 INFO considered node: New William
+2017-01-25 22:51:20,800 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,800 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,800 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,800 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,800 generate-graphs, line 411 INFO timestep: 10
+2017-01-25 22:51:20,800 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,800 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,800 generate-graphs, line 420 INFO considered node: Bradmouth
+2017-01-25 22:51:20,800 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,800 generate-graphs, line 442 INFO visited node: Bradmouth
+2017-01-25 22:51:20,801 generate-graphs, line 411 INFO timestep: 11
+2017-01-25 22:51:20,801 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,801 generate-graphs, line 420 INFO considered node: New William
+2017-01-25 22:51:20,801 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,801 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,801 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,801 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,801 generate-graphs, line 411 INFO timestep: 12
+2017-01-25 22:51:20,801 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,801 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,801 generate-graphs, line 420 INFO considered node: Bradmouth
+2017-01-25 22:51:20,801 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,802 generate-graphs, line 442 INFO visited node: Bradmouth
+2017-01-25 22:51:20,802 generate-graphs, line 411 INFO timestep: 13
+2017-01-25 22:51:20,802 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,802 generate-graphs, line 420 INFO considered node: New William
+2017-01-25 22:51:20,802 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,802 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,802 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,802 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,802 generate-graphs, line 411 INFO timestep: 14
+2017-01-25 22:51:20,802 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,802 generate-graphs, line 420 INFO considered node: East Patricialand
+2017-01-25 22:51:20,802 generate-graphs, line 420 INFO considered node: Bradmouth
+2017-01-25 22:51:20,802 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,803 generate-graphs, line 442 INFO visited node: Bradmouth
+2017-01-25 22:51:20,803 generate-graphs, line 411 INFO timestep: 15
+2017-01-25 22:51:20,803 generate-graphs, line 416 INFO switch setting: R
+2017-01-25 22:51:20,803 generate-graphs, line 420 INFO considered node: New William
+2017-01-25 22:51:20,803 generate-graphs, line 420 INFO considered node: Serranofurt
+2017-01-25 22:51:20,803 generate-graphs, line 420 INFO considered node: Chenstad
+2017-01-25 22:51:20,803 generate-graphs, line 437 INFO edge label: R
+2017-01-25 22:51:20,803 generate-graphs, line 442 INFO visited node: Chenstad
+2017-01-25 22:51:20,803 generate-graphs, line 446 INFO observations: ['R', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R']
+2017-01-25 22:51:20,813 generate-graphs, line 456 INFO ### Simulation ended ==<
+2017-01-25 22:51:20,813 generate-graphs, line 105 INFO ### Graph plotting started ==>
+2017-01-25 22:51:23,719 generate-graphs, line 120 INFO ### Graph plotting ended ==<

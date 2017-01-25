@@ -1,0 +1,135 @@
+2017-01-25 22:53:47,427 generate-graphs, line 479 INFO Experiment# 2
+2017-01-25 22:53:47,427 generate-graphs, line 481 INFO dim 4
+2017-01-25 22:53:47,441 generate-graphs, line 127 INFO ### Graph generation started ==>
+2017-01-25 22:53:47,443 generate-graphs, line 174 INFO ### Graph generation ended ==<
+2017-01-25 22:53:47,443 generate-graphs, line 91 INFO Degree sequence [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+2017-01-25 22:53:47,443 generate-graphs, line 92 INFO Degree histogram
+2017-01-25 22:53:47,443 generate-graphs, line 99 INFO degree #nodes
+2017-01-25 22:53:47,443 generate-graphs, line 101 INFO 3 16
+2017-01-25 22:53:47,443 generate-graphs, line 184 INFO ### Labels setting started ==>
+2017-01-25 22:53:47,444 generate-graphs, line 230 INFO {('North Cheyenne', 'North Alecshire'): 'L', ('North Cheyenne', 'West Zacharychester'): 'O', ('North Cheyenne', 'West Robertaberg'): 'R'}
+2017-01-25 22:53:47,444 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,444 generate-graphs, line 230 INFO {('Rodriguezville', 'Ashleyburgh'): 'L', ('Rodriguezville', 'West Robertaberg'): 'R', ('Rodriguezville', 'Stacyland'): 'O'}
+2017-01-25 22:53:47,444 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,444 generate-graphs, line 230 INFO {('South Joseph', 'West Zacharychester'): 'R', ('South Joseph', 'West Robertaberg'): 'L', ('South Joseph', 'Barkerfort'): 'O'}
+2017-01-25 22:53:47,444 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,444 generate-graphs, line 230 INFO {('North Alecshire', 'North Cheyenne'): 'R', ('North Alecshire', 'Fuenteschester'): 'O', ('North Alecshire', 'Johnsonburgh'): 'L'}
+2017-01-25 22:53:47,444 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,444 generate-graphs, line 230 INFO {('Jacquelinechester', 'Manuelmouth'): 'O', ('Jacquelinechester', 'Lake Heathermouth'): 'L', ('Jacquelinechester', 'South Maureen'): 'R'}
+2017-01-25 22:53:47,444 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,445 generate-graphs, line 230 INFO {('Manuelmouth', 'South Maureen'): 'R', ('Manuelmouth', 'Jacquelinechester'): 'L', ('Manuelmouth', 'Johnsonburgh'): 'O'}
+2017-01-25 22:53:47,445 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,445 generate-graphs, line 230 INFO {('Nealberg', 'Lake Heathermouth'): 'L', ('Nealberg', 'Stacyland'): 'R', ('Nealberg', 'Ashleyburgh'): 'O'}
+2017-01-25 22:53:47,445 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,445 generate-graphs, line 230 INFO {('Johnsonburgh', 'Barkerfort'): 'L', ('Johnsonburgh', 'North Alecshire'): 'O', ('Johnsonburgh', 'Manuelmouth'): 'R'}
+2017-01-25 22:53:47,445 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,445 generate-graphs, line 230 INFO {('Fuenteschester', 'Barkerfort'): 'L', ('Fuenteschester', 'North Alecshire'): 'O', ('Fuenteschester', 'Lake Heathermouth'): 'R'}
+2017-01-25 22:53:47,445 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,445 generate-graphs, line 230 INFO {('West Zacharychester', 'South Joseph'): 'O', ('West Zacharychester', 'Stacyland'): 'R', ('West Zacharychester', 'North Cheyenne'): 'L'}
+2017-01-25 22:53:47,445 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,446 generate-graphs, line 230 INFO {('Lake Heathermouth', 'Nealberg'): 'O', ('Lake Heathermouth', 'Jacquelinechester'): 'R', ('Lake Heathermouth', 'Fuenteschester'): 'L'}
+2017-01-25 22:53:47,446 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,446 generate-graphs, line 230 INFO {('Stacyland', 'Rodriguezville'): 'L', ('Stacyland', 'West Zacharychester'): 'R', ('Stacyland', 'Nealberg'): 'O'}
+2017-01-25 22:53:47,446 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,446 generate-graphs, line 230 INFO {('South Maureen', 'Jacquelinechester'): 'O', ('South Maureen', 'Manuelmouth'): 'L', ('South Maureen', 'Ashleyburgh'): 'R'}
+2017-01-25 22:53:47,446 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,446 generate-graphs, line 230 INFO {('Ashleyburgh', 'Rodriguezville'): 'O', ('Ashleyburgh', 'Nealberg'): 'R', ('Ashleyburgh', 'South Maureen'): 'L'}
+2017-01-25 22:53:47,446 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,446 generate-graphs, line 230 INFO {('West Robertaberg', 'South Joseph'): 'R', ('West Robertaberg', 'North Cheyenne'): 'L', ('West Robertaberg', 'Rodriguezville'): 'O'}
+2017-01-25 22:53:47,446 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,447 generate-graphs, line 230 INFO {('Barkerfort', 'South Joseph'): 'L', ('Barkerfort', 'Johnsonburgh'): 'O', ('Barkerfort', 'Fuenteschester'): 'R'}
+2017-01-25 22:53:47,447 generate-graphs, line 231 INFO {}
+2017-01-25 22:53:47,447 generate-graphs, line 385 INFO ### Switches setting started ==>
+2017-01-25 22:53:47,447 generate-graphs, line 387 INFO {'North Cheyenne': 'R', 'Jacquelinechester': 'L', 'Rodriguezville': 'R', 'Stacyland': 'L', 'West Zacharychester': 'R', 'South Joseph': 'L', 'Fuenteschester': 'R', 'Ashleyburgh': 'L', 'Manuelmouth': 'L', 'South Maureen': 'L', 'Barkerfort': 'L', 'Lake Heathermouth': 'L', 'Nealberg': 'R', 'West Robertaberg': 'L', 'North Alecshire': 'R', 'Johnsonburgh': 'R'}
+2017-01-25 22:53:47,447 generate-graphs, line 389 INFO ### Switches setting ended ==<
+2017-01-25 22:53:47,453 generate-graphs, line 494 ERROR Unable to write file sim-810425-170125-225342-exp-2.gml
+2017-01-25 22:53:47,453 generate-graphs, line 396 INFO ### Simulation started ==>
+2017-01-25 22:53:47,453 generate-graphs, line 402 INFO timestep: 0
+2017-01-25 22:53:47,453 generate-graphs, line 406 INFO visited node: Ashleyburgh
+2017-01-25 22:53:47,453 generate-graphs, line 412 INFO timestep: 1
+2017-01-25 22:53:47,453 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,453 generate-graphs, line 421 INFO considered node: South Maureen
+2017-01-25 22:53:47,454 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,454 generate-graphs, line 443 INFO visited node: South Maureen
+2017-01-25 22:53:47,454 generate-graphs, line 412 INFO timestep: 2
+2017-01-25 22:53:47,454 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,454 generate-graphs, line 421 INFO considered node: Manuelmouth
+2017-01-25 22:53:47,454 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,454 generate-graphs, line 443 INFO visited node: Manuelmouth
+2017-01-25 22:53:47,454 generate-graphs, line 412 INFO timestep: 3
+2017-01-25 22:53:47,454 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,454 generate-graphs, line 421 INFO considered node: South Maureen
+2017-01-25 22:53:47,454 generate-graphs, line 421 INFO considered node: Jacquelinechester
+2017-01-25 22:53:47,454 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,455 generate-graphs, line 443 INFO visited node: Jacquelinechester
+2017-01-25 22:53:47,455 generate-graphs, line 412 INFO timestep: 4
+2017-01-25 22:53:47,455 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,455 generate-graphs, line 421 INFO considered node: Manuelmouth
+2017-01-25 22:53:47,455 generate-graphs, line 421 INFO considered node: South Maureen
+2017-01-25 22:53:47,455 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,455 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,455 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,455 generate-graphs, line 412 INFO timestep: 5
+2017-01-25 22:53:47,455 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,455 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,455 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,455 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,456 generate-graphs, line 412 INFO timestep: 6
+2017-01-25 22:53:47,456 generate-graphs, line 417 INFO switch setting: R
+2017-01-25 22:53:47,456 generate-graphs, line 421 INFO considered node: Barkerfort
+2017-01-25 22:53:47,456 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,456 generate-graphs, line 438 INFO edge label: R
+2017-01-25 22:53:47,456 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,456 generate-graphs, line 412 INFO timestep: 7
+2017-01-25 22:53:47,456 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,456 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,456 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,456 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,457 generate-graphs, line 412 INFO timestep: 8
+2017-01-25 22:53:47,457 generate-graphs, line 417 INFO switch setting: R
+2017-01-25 22:53:47,457 generate-graphs, line 421 INFO considered node: Barkerfort
+2017-01-25 22:53:47,457 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,457 generate-graphs, line 438 INFO edge label: R
+2017-01-25 22:53:47,457 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,457 generate-graphs, line 412 INFO timestep: 9
+2017-01-25 22:53:47,457 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,457 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,457 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,457 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,457 generate-graphs, line 412 INFO timestep: 10
+2017-01-25 22:53:47,457 generate-graphs, line 417 INFO switch setting: R
+2017-01-25 22:53:47,458 generate-graphs, line 421 INFO considered node: Barkerfort
+2017-01-25 22:53:47,458 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,458 generate-graphs, line 438 INFO edge label: R
+2017-01-25 22:53:47,458 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,458 generate-graphs, line 412 INFO timestep: 11
+2017-01-25 22:53:47,458 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,458 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,458 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,458 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,458 generate-graphs, line 412 INFO timestep: 12
+2017-01-25 22:53:47,458 generate-graphs, line 417 INFO switch setting: R
+2017-01-25 22:53:47,458 generate-graphs, line 421 INFO considered node: Barkerfort
+2017-01-25 22:53:47,459 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,459 generate-graphs, line 438 INFO edge label: R
+2017-01-25 22:53:47,459 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,459 generate-graphs, line 412 INFO timestep: 13
+2017-01-25 22:53:47,459 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,459 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,459 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,459 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,459 generate-graphs, line 412 INFO timestep: 14
+2017-01-25 22:53:47,459 generate-graphs, line 417 INFO switch setting: R
+2017-01-25 22:53:47,459 generate-graphs, line 421 INFO considered node: Barkerfort
+2017-01-25 22:53:47,459 generate-graphs, line 421 INFO considered node: Lake Heathermouth
+2017-01-25 22:53:47,459 generate-graphs, line 438 INFO edge label: R
+2017-01-25 22:53:47,460 generate-graphs, line 443 INFO visited node: Lake Heathermouth
+2017-01-25 22:53:47,460 generate-graphs, line 412 INFO timestep: 15
+2017-01-25 22:53:47,460 generate-graphs, line 417 INFO switch setting: L
+2017-01-25 22:53:47,460 generate-graphs, line 421 INFO considered node: Fuenteschester
+2017-01-25 22:53:47,460 generate-graphs, line 438 INFO edge label: L
+2017-01-25 22:53:47,460 generate-graphs, line 443 INFO visited node: Fuenteschester
+2017-01-25 22:53:47,460 generate-graphs, line 447 INFO observations: ['L', 'L', 'L', 'L', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L', 'R', 'L']
+2017-01-25 22:53:47,469 generate-graphs, line 457 INFO ### Simulation ended ==<
+2017-01-25 22:53:47,469 generate-graphs, line 105 INFO ### Graph plotting started ==>
+2017-01-25 22:53:49,165 generate-graphs, line 121 INFO ### Graph plotting ended ==<
