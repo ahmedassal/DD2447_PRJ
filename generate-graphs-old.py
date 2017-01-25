@@ -1,14 +1,7 @@
 import networkx as nx
 from networkx.utils import uniform_sequence
 # import matplotlib as mpl
-import matplotlib
-matplotlib.rcParams['backend'] = 'TkAgg'
-# matplotlib.rcParams['backend'] = 'WXAgg'
-# matplotlib.rcParams['backend'] = 'QTAgg'
-# matplotlib.rcParams['backend'] = 'Qt4Agg'
-# matplotlib.rcParams['backend'] = 'Qt5Agg'
-import matplotlib.pyplot as plt
-# plt.switch_backend('Qt5Agg')
+# import matplotlib.pyplot as plt
 from faker import Factory
 import random
 import logging
@@ -194,19 +187,14 @@ def label_graph(graph, labels):
         mappingVertices2[(node, neighbor)] = node
         mappingVertices2Label[(node, neighbor)] = potentialLabels[idx1[idx_idx]]  # labels[idx1[idx]]
       idx_idx = idx_idx + 1
-    # nx.set_edge_attributes(graph, vertex1Key, mappingVertices1)
-    # nx.set_edge_attributes(graph, vertex1LabelKey, mappingVertices1Label)
-    # nx.set_edge_attributes(graph, vertex2Key, mappingVertices2)
-    # nx.set_edge_attributes(graph, vertex2LabelKey, mappingVertices2Label)
-
-    # nx.set_edge_attributes(graph, vertex1Key, mappingVertices1)
-    nx.set_edge_attributes(graph, node, mappingVertices1Label)
-    # nx.set_edge_attributes(graph, vertex2Key, mappingVertices2)
-    nx.set_edge_attributes(graph, node, mappingVertices2Label)
+    nx.set_edge_attributes(graph, vertex1Key, mappingVertices1)
+    nx.set_edge_attributes(graph, vertex1LabelKey, mappingVertices1Label)
+    nx.set_edge_attributes(graph, vertex2Key, mappingVertices2)
+    nx.set_edge_attributes(graph, vertex2LabelKey, mappingVertices2Label)
     # print(mappingVertices1)
-    # print(mappingVertices1Label)
+    print(mappingVertices1Label)
     # print(mappingVertices2)
-    # print(mappingVertices2Label)
+    print(mappingVertices2Label)
 
       # mapping1[(nodes[i], nodes[j])] = lbl
 
@@ -323,9 +311,9 @@ def label_graph(graph, labels):
   # # print(df.ix[:, :])
   # print(mapping2)
   # nx.set_edge_attributes(graph, 'label2', mapping2)
-  # df = nx.to_pandas_dataframe(graph)
+  df = nx.to_pandas_dataframe(graph)
   # print(df.ix[:,:])
-  # print(df.to_string())
+  print(df.to_string())
   return nx.Graph(graph)
 
   # print(df[1,:])
@@ -358,7 +346,7 @@ def label_graph(graph, labels):
 
 def set_switches(graph, switches_values):
   mapping = {node: np.random.choice(switches_values)for node in graph.nodes()}
-  # print(mapping)
+  print(mapping)
   nx.set_node_attributes(graph, 'switch', mapping)
   return graph
 
@@ -366,24 +354,20 @@ def simulate(graph, timesteps):
   observations = []
   startNode = np.random.choice(graph.nodes())
   node = startNode
-  print('timestep: ', 0)
-  observations.append(0)
   observations.append(node)
-  for timestep in range(1, timesteps):
+  for timestep in range(timesteps):
     print('timestep: ', timestep)
     observations.append(timestep)
     for neighbor in nx.neighbors(graph, node):
       switchVal = nx.get_node_attributes(graph, 'switch')[node]
       # print(switchVal)
-      labelVal = graph[node][neighbor][node]
-
-      # labelVal = nx.get_edge_attributes(graph, node)
-      # # print(labelVal)
-      # if labelVal.__contains__((node, neighbor)) :
-      #   labelVal = labelVal[(node, neighbor)]
-      # elif labelVal.__contains__((neighbor, node)):
-      #   labelVal = labelVal[(neighbor, node)]
+      labelVal = nx.get_edge_attributes(graph, 'label1')
       # print(labelVal)
+      if labelVal.__contains__((node, neighbor)) :
+        labelVal = labelVal[(node, neighbor)]
+      else:
+        labelVal = labelVal[(neighbor, node)]
+      print(labelVal)
       # if graph[node][neighbor]['label1'] == graph[node]['switch']:
       if labelVal == switchVal:
         observations.append(labelVal)
@@ -396,21 +380,19 @@ def simulate(graph, timesteps):
 
 
 if __name__ == "__main__":
-  np.random.seed(1234)
-  simultionName = 'simulation'
-  logging.basicConfig(filename='run.log', filemode='w', level=logging.DEBUG)
-  fake = Factory.create()
-  cities = create_fake_cities(fake, 2 * TARGET_VERTICES_COUNT)
+  # logging.basicConfig(filename='run.log', filemode='w', level=logging.DEBUG)
+  # fake = Factory.create()
+  # cities = create_fake_cities(fake, 2 * TARGET_VERTICES_COUNT)
 
-  graph = generate_graph(cities)
+  # graph = generate_graph(cities)
   # print(type(graph))
-  multiGraph = graph
+  # multiGraph = graph
   # multiGraph = nx.MultiGraph(graph)
   # compute_histogram(multiGraph)
   # print(graph.nodes())
   # label_nodes(multiGraph, cities)
-  multiGraph = label_graph(multiGraph, LABELS)
-  multiGraph = set_switches(multiGraph, SWITCHES_VALUES)
+  # multiGraph = label_graph(multiGraph, LABELS)
+  # multiGraph = set_switches(multiGraph, SWITCHES_VALUES)
 
   # nx.write_gml(multiGraph, "graph.gml")
   # df = nx.to_pandas_dataframe(multiGraph)
@@ -418,11 +400,21 @@ if __name__ == "__main__":
   # print(df)
   # pd.DataFrame.to_csv("graph.csv", sep=',')
 
-  observations = simulate(multiGraph, 10)
-  print(observations)
-  visualize_graph(multiGraph)
+  # observations = simulate(multiGraph, 10)
+  # print(observations)
+  # visualize_graph(multiGraph)
+  # am = nx.adjacency_matrix(multiGraph)
+  # print("am")
+  # print(am)
+  # sm = nx.to_scipy_sparse_matrix(multiGraph)
+  # print("sm")
+  # print(sm)
 
-  nx.write_gml(multiGraph, "graph.gml")
+
+
+
+
+  # nx.write_gml(multiGraph, "graph.gml")
   # mygraph = nx.read_gml("path.to.file")
 
 
@@ -437,3 +429,38 @@ if __name__ == "__main__":
 
 
 
+  # for node in G.nodes():
+  #   logging.info(" node: {0}, deg: {1}".format(node, G.degree(node)));
+  #   for edge_idx in range(maxEdgesPerVertex - len(G.neighbors(node))):
+  #     # print(G.degree(node))
+  #     fltr = lambda x: (x != node) and (x not in G.neighbors(node)) and (G.degree(x) < maxEdgesPerVertex);
+  #     potentialNeighbors = list(filter(  fltr ,G.nodes()));
+  #     neighbor = random.choice(potentialNeighbors);
+  #     logging.info(" deg: {0}, pneighbors: {1}, neightbor: {2}. Added e# {3}".format(G.degree(node), potentialNeighbors, neighbor, edge_idx));
+  #     G.add_edge(node, neighbor)
+  #     # logging.info(" added e# {3}".format(edge_idx, node, neighbor));
+  #
+  #     # if len(G.neighbors(node))<4 :
+  #   logging.info(G.degree());
+  #   logging.info(" ");
+  # visualize_graph(G)
+
+
+
+
+
+
+
+# degree = 3
+# n = 100
+# print(uniform_sequence(5))
+# seq=nx.utils.create_degree_sequence(10,uniform_sequence, max_tries=100, 3)
+# # z=nx.utils.create_degree_sequence([3, 3, 3, 3, 3])
+# G=nx.configuration_model(seq)
+# G=nx.Graph(G)
+
+# z=[3,3, 3, 3]
+# print(nx.is_valid_degree_sequence(z))
+#
+# print("Configuration model")
+# G=nx.configuration_model(z)  # configuration model
