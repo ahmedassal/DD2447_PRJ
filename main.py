@@ -1,4 +1,5 @@
 import numpy as np
+import mcmc as mc
 import matplotlib
 matplotlib.rcParams['backend'] = 'TkAgg'
 # matplotlib.rcParams['backend'] = 'WXAgg'
