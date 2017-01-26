@@ -1,0 +1,113 @@
+2017-01-26 19:39:16,695 generategraphs, line 619 INFO Experiment# 0
+2017-01-26 19:39:16,696 generategraphs, line 621 INFO dim 3
+2017-01-26 19:39:16,704 generategraphs, line 128 INFO ### Graph generation started ==>
+2017-01-26 19:39:16,705 generategraphs, line 175 INFO ### Graph generation ended ==<
+2017-01-26 19:39:16,705 generategraphs, line 92 INFO Degree sequence [3, 3, 3, 3, 3, 3]
+2017-01-26 19:39:16,705 generategraphs, line 93 INFO Degree histogram
+2017-01-26 19:39:16,705 generategraphs, line 100 INFO degree #nodes
+2017-01-26 19:39:16,705 generategraphs, line 102 INFO 3 6
+2017-01-26 19:39:16,705 generategraphs, line 186 INFO ### Labels setting started ==>
+2017-01-26 19:39:16,705 generategraphs, line 234 INFO {('Lake Kathyberg', 'South Robertborough'): 'R', ('Lake Kathyberg', 'Robertchester'): 'O', ('Lake Kathyberg', 'Lake Larry'): 'L'}
+2017-01-26 19:39:16,705 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,706 generategraphs, line 234 INFO {('West Matthew', 'Brownfort'): 'R', ('West Matthew', 'South Robertborough'): 'O', ('West Matthew', 'Robertchester'): 'L'}
+2017-01-26 19:39:16,706 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,706 generategraphs, line 234 INFO {('Brownfort', 'Robertchester'): 'L', ('Brownfort', 'West Matthew'): 'O', ('Brownfort', 'Lake Larry'): 'R'}
+2017-01-26 19:39:16,706 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,706 generategraphs, line 234 INFO {('Robertchester', 'Lake Kathyberg'): 'O', ('Robertchester', 'West Matthew'): 'R', ('Robertchester', 'Brownfort'): 'L'}
+2017-01-26 19:39:16,706 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,706 generategraphs, line 234 INFO {('Lake Larry', 'South Robertborough'): 'L', ('Lake Larry', 'Lake Kathyberg'): 'R', ('Lake Larry', 'Brownfort'): 'O'}
+2017-01-26 19:39:16,706 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,706 generategraphs, line 234 INFO {('South Robertborough', 'West Matthew'): 'O', ('South Robertborough', 'Lake Larry'): 'L', ('South Robertborough', 'Lake Kathyberg'): 'R'}
+2017-01-26 19:39:16,707 generategraphs, line 235 INFO {}
+2017-01-26 19:39:16,707 generategraphs, line 386 INFO ### Labels setting ended ==<
+2017-01-26 19:39:16,707 generategraphs, line 393 INFO ### Switches setting started ==>
+2017-01-26 19:39:16,707 generategraphs, line 395 INFO {'Lake Larry': 'L', 'West Matthew': 'R', 'Brownfort': 'L', 'Robertchester': 'L', 'Lake Kathyberg': 'R', 'South Robertborough': 'R'}
+2017-01-26 19:39:16,707 generategraphs, line 397 INFO ### Switches setting ended ==<
+2017-01-26 19:39:16,713 generategraphs, line 642 ERROR Unable to write file sim-987206-170126-193916-exp-0.gml
+2017-01-26 19:39:16,713 generategraphs, line 493 INFO ### Simulation started ==>
+2017-01-26 19:39:16,714 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,714 generategraphs, line 515 INFO timestep: 0, next node: West Matthew
+2017-01-26 19:39:16,714 generategraphs, line 527 INFO timestep: 0, edge: ('West Matthew', 'Robertchester'), correct label: L, emitted label: L
+2017-01-26 19:39:16,714 generategraphs, line 537 INFO timestep: 0, switch setting: R @ node: West Matthew
+2017-01-26 19:39:16,714 generategraphs, line 546 INFO timestep: 0, considered node: Brownfort
+2017-01-26 19:39:16,714 generategraphs, line 546 INFO timestep: 0, considered node: Robertchester
+2017-01-26 19:39:16,714 generategraphs, line 546 INFO timestep: 0, considered node: South Robertborough
+2017-01-26 19:39:16,714 generategraphs, line 564 INFO next edge: ('West Matthew', 'South Robertborough'), correct label: O, emitted label: O
+2017-01-26 19:39:16,714 generategraphs, line 579 INFO timestep: 0, next node: South Robertborough
+2017-01-26 19:39:16,714 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,714 generategraphs, line 515 INFO timestep: 1, next node: South Robertborough
+2017-01-26 19:39:16,715 generategraphs, line 527 INFO timestep: 1, edge: ('West Matthew', 'South Robertborough'), correct label: O, emitted label: O
+2017-01-26 19:39:16,715 generategraphs, line 537 INFO timestep: 1, switch setting: R @ node: South Robertborough
+2017-01-26 19:39:16,715 generategraphs, line 546 INFO timestep: 1, considered node: West Matthew
+2017-01-26 19:39:16,715 generategraphs, line 546 INFO timestep: 1, considered node: Lake Kathyberg
+2017-01-26 19:39:16,715 generategraphs, line 564 INFO next edge: ('South Robertborough', 'Lake Kathyberg'), correct label: R, emitted label: R
+2017-01-26 19:39:16,715 generategraphs, line 579 INFO timestep: 1, next node: Lake Kathyberg
+2017-01-26 19:39:16,715 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,715 generategraphs, line 515 INFO timestep: 2, next node: Lake Kathyberg
+2017-01-26 19:39:16,715 generategraphs, line 527 INFO timestep: 2, edge: ('South Robertborough', 'Lake Kathyberg'), correct label: R, emitted label: L
+2017-01-26 19:39:16,715 generategraphs, line 537 INFO timestep: 2, switch setting: R @ node: Lake Kathyberg
+2017-01-26 19:39:16,715 generategraphs, line 546 INFO timestep: 2, considered node: Lake Larry
+2017-01-26 19:39:16,716 generategraphs, line 546 INFO timestep: 2, considered node: Robertchester
+2017-01-26 19:39:16,716 generategraphs, line 564 INFO next edge: ('Lake Kathyberg', 'Robertchester'), correct label: O, emitted label: O
+2017-01-26 19:39:16,716 generategraphs, line 579 INFO timestep: 2, next node: Robertchester
+2017-01-26 19:39:16,716 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,716 generategraphs, line 515 INFO timestep: 3, next node: Robertchester
+2017-01-26 19:39:16,716 generategraphs, line 527 INFO timestep: 3, edge: ('Lake Kathyberg', 'Robertchester'), correct label: O, emitted label: O
+2017-01-26 19:39:16,716 generategraphs, line 537 INFO timestep: 3, switch setting: L @ node: Robertchester
+2017-01-26 19:39:16,716 generategraphs, line 546 INFO timestep: 3, considered node: West Matthew
+2017-01-26 19:39:16,716 generategraphs, line 546 INFO timestep: 3, considered node: Lake Kathyberg
+2017-01-26 19:39:16,716 generategraphs, line 546 INFO timestep: 3, considered node: Brownfort
+2017-01-26 19:39:16,716 generategraphs, line 564 INFO next edge: ('Robertchester', 'Brownfort'), correct label: L, emitted label: L
+2017-01-26 19:39:16,716 generategraphs, line 579 INFO timestep: 3, next node: Brownfort
+2017-01-26 19:39:16,716 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,717 generategraphs, line 515 INFO timestep: 4, next node: Brownfort
+2017-01-26 19:39:16,717 generategraphs, line 527 INFO timestep: 4, edge: ('Robertchester', 'Brownfort'), correct label: L, emitted label: L
+2017-01-26 19:39:16,717 generategraphs, line 537 INFO timestep: 4, switch setting: L @ node: Brownfort
+2017-01-26 19:39:16,717 generategraphs, line 546 INFO timestep: 4, considered node: West Matthew
+2017-01-26 19:39:16,717 generategraphs, line 564 INFO next edge: ('Brownfort', 'West Matthew'), correct label: O, emitted label: O
+2017-01-26 19:39:16,717 generategraphs, line 579 INFO timestep: 4, next node: West Matthew
+2017-01-26 19:39:16,717 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,717 generategraphs, line 515 INFO timestep: 5, next node: West Matthew
+2017-01-26 19:39:16,717 generategraphs, line 527 INFO timestep: 5, edge: ('Brownfort', 'West Matthew'), correct label: R, emitted label: R
+2017-01-26 19:39:16,717 generategraphs, line 537 INFO timestep: 5, switch setting: R @ node: West Matthew
+2017-01-26 19:39:16,717 generategraphs, line 546 INFO timestep: 5, considered node: Brownfort
+2017-01-26 19:39:16,717 generategraphs, line 546 INFO timestep: 5, considered node: Robertchester
+2017-01-26 19:39:16,717 generategraphs, line 546 INFO timestep: 5, considered node: South Robertborough
+2017-01-26 19:39:16,718 generategraphs, line 564 INFO next edge: ('West Matthew', 'South Robertborough'), correct label: O, emitted label: O
+2017-01-26 19:39:16,718 generategraphs, line 579 INFO timestep: 5, next node: South Robertborough
+2017-01-26 19:39:16,718 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,718 generategraphs, line 515 INFO timestep: 6, next node: South Robertborough
+2017-01-26 19:39:16,718 generategraphs, line 527 INFO timestep: 6, edge: ('West Matthew', 'South Robertborough'), correct label: O, emitted label: O
+2017-01-26 19:39:16,718 generategraphs, line 537 INFO timestep: 6, switch setting: R @ node: South Robertborough
+2017-01-26 19:39:16,718 generategraphs, line 546 INFO timestep: 6, considered node: West Matthew
+2017-01-26 19:39:16,718 generategraphs, line 546 INFO timestep: 6, considered node: Lake Kathyberg
+2017-01-26 19:39:16,718 generategraphs, line 564 INFO next edge: ('South Robertborough', 'Lake Kathyberg'), correct label: R, emitted label: R
+2017-01-26 19:39:16,718 generategraphs, line 579 INFO timestep: 6, next node: Lake Kathyberg
+2017-01-26 19:39:16,718 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,718 generategraphs, line 515 INFO timestep: 7, next node: Lake Kathyberg
+2017-01-26 19:39:16,719 generategraphs, line 527 INFO timestep: 7, edge: ('South Robertborough', 'Lake Kathyberg'), correct label: R, emitted label: R
+2017-01-26 19:39:16,719 generategraphs, line 537 INFO timestep: 7, switch setting: R @ node: Lake Kathyberg
+2017-01-26 19:39:16,719 generategraphs, line 546 INFO timestep: 7, considered node: Lake Larry
+2017-01-26 19:39:16,719 generategraphs, line 546 INFO timestep: 7, considered node: Robertchester
+2017-01-26 19:39:16,719 generategraphs, line 564 INFO next edge: ('Lake Kathyberg', 'Robertchester'), correct label: O, emitted label: O
+2017-01-26 19:39:16,719 generategraphs, line 579 INFO timestep: 7, next node: Robertchester
+2017-01-26 19:39:16,719 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,719 generategraphs, line 515 INFO timestep: 8, next node: Robertchester
+2017-01-26 19:39:16,719 generategraphs, line 527 INFO timestep: 8, edge: ('Lake Kathyberg', 'Robertchester'), correct label: O, emitted label: O
+2017-01-26 19:39:16,719 generategraphs, line 537 INFO timestep: 8, switch setting: L @ node: Robertchester
+2017-01-26 19:39:16,719 generategraphs, line 546 INFO timestep: 8, considered node: West Matthew
+2017-01-26 19:39:16,719 generategraphs, line 546 INFO timestep: 8, considered node: Lake Kathyberg
+2017-01-26 19:39:16,719 generategraphs, line 546 INFO timestep: 8, considered node: Brownfort
+2017-01-26 19:39:16,720 generategraphs, line 564 INFO next edge: ('Robertchester', 'Brownfort'), correct label: L, emitted label: L
+2017-01-26 19:39:16,720 generategraphs, line 579 INFO timestep: 8, next node: Brownfort
+2017-01-26 19:39:16,720 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:39:16,720 generategraphs, line 515 INFO timestep: 9, next node: Brownfort
+2017-01-26 19:39:16,720 generategraphs, line 527 INFO timestep: 9, edge: ('Robertchester', 'Brownfort'), correct label: L, emitted label: L
+2017-01-26 19:39:16,720 generategraphs, line 537 INFO timestep: 9, switch setting: L @ node: Brownfort
+2017-01-26 19:39:16,720 generategraphs, line 546 INFO timestep: 9, considered node: West Matthew
+2017-01-26 19:39:16,720 generategraphs, line 564 INFO next edge: ('Brownfort', 'West Matthew'), correct label: O, emitted label: O
+2017-01-26 19:39:16,720 generategraphs, line 579 INFO timestep: 9, next node: West Matthew
+2017-01-26 19:39:16,720 generategraphs, line 586 INFO observations: ['L', 'O', 'O', 'R', 'L', 'O', 'O', 'L', 'L', 'O', 'R', 'O', 'O', 'R', 'R', 'O', 'O', 'L', 'L', 'O']
+2017-01-26 19:39:16,731 generategraphs, line 596 INFO ### Simulation ended ==<
+2017-01-26 19:39:16,734 generategraphs, line 106 INFO ### Graph plotting started ==>
+2017-01-26 19:39:19,704 generategraphs, line 122 INFO ### Graph plotting ended ==<

@@ -1,0 +1,105 @@
+2017-01-26 19:30:21,025 generategraphs, line 616 INFO Experiment# 0
+2017-01-26 19:30:21,025 generategraphs, line 618 INFO dim 3
+2017-01-26 19:30:21,033 generategraphs, line 128 INFO ### Graph generation started ==>
+2017-01-26 19:30:21,034 generategraphs, line 175 INFO ### Graph generation ended ==<
+2017-01-26 19:30:21,034 generategraphs, line 92 INFO Degree sequence [3, 3, 3, 3, 3, 3]
+2017-01-26 19:30:21,034 generategraphs, line 93 INFO Degree histogram
+2017-01-26 19:30:21,034 generategraphs, line 100 INFO degree #nodes
+2017-01-26 19:30:21,034 generategraphs, line 102 INFO 3 6
+2017-01-26 19:30:21,034 generategraphs, line 186 INFO ### Labels setting started ==>
+2017-01-26 19:30:21,034 generategraphs, line 234 INFO {('West Rebekah', 'Murphyview'): 'R', ('West Rebekah', 'Nicholasview'): 'O', ('West Rebekah', 'Brownburgh'): 'L'}
+2017-01-26 19:30:21,035 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,035 generategraphs, line 234 INFO {('Elijahfurt', 'Murphyview'): 'L', ('Elijahfurt', 'Nicholasview'): 'R', ('Elijahfurt', 'Stephenborough'): 'O'}
+2017-01-26 19:30:21,035 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,035 generategraphs, line 234 INFO {('Brownburgh', 'Murphyview'): 'R', ('Brownburgh', 'Stephenborough'): 'L', ('Brownburgh', 'West Rebekah'): 'O'}
+2017-01-26 19:30:21,035 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,035 generategraphs, line 234 INFO {('Murphyview', 'West Rebekah'): 'O', ('Murphyview', 'Elijahfurt'): 'L', ('Murphyview', 'Brownburgh'): 'R'}
+2017-01-26 19:30:21,035 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,035 generategraphs, line 234 INFO {('Stephenborough', 'Brownburgh'): 'R', ('Stephenborough', 'Nicholasview'): 'O', ('Stephenborough', 'Elijahfurt'): 'L'}
+2017-01-26 19:30:21,035 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,036 generategraphs, line 234 INFO {('Nicholasview', 'Elijahfurt'): 'L', ('Nicholasview', 'Stephenborough'): 'O', ('Nicholasview', 'West Rebekah'): 'R'}
+2017-01-26 19:30:21,036 generategraphs, line 235 INFO {}
+2017-01-26 19:30:21,036 generategraphs, line 386 INFO ### Labels setting ended ==<
+2017-01-26 19:30:21,036 generategraphs, line 393 INFO ### Switches setting started ==>
+2017-01-26 19:30:21,036 generategraphs, line 395 INFO {'West Rebekah': 'L', 'Elijahfurt': 'L', 'Brownburgh': 'L', 'Murphyview': 'L', 'Stephenborough': 'L', 'Nicholasview': 'L'}
+2017-01-26 19:30:21,036 generategraphs, line 397 INFO ### Switches setting ended ==<
+2017-01-26 19:30:21,042 generategraphs, line 639 ERROR Unable to write file sim-500494-170126-193021-exp-0.gml
+2017-01-26 19:30:21,042 generategraphs, line 492 INFO ### Simulation started ==>
+2017-01-26 19:30:21,043 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,043 generategraphs, line 514 INFO timestep: 0, next node: Stephenborough
+2017-01-26 19:30:21,043 generategraphs, line 526 INFO timestep: 0, edge: ('Stephenborough', 'Nicholasview'), correct label: O, emitted label: O
+2017-01-26 19:30:21,043 generategraphs, line 536 INFO timestep: 0, switch setting: L @ node: Stephenborough
+2017-01-26 19:30:21,043 generategraphs, line 545 INFO timestep: 0, considered node: Elijahfurt
+2017-01-26 19:30:21,043 generategraphs, line 563 INFO next edge: ('Stephenborough', 'Elijahfurt'), correct label: L, emitted label: L
+2017-01-26 19:30:21,043 generategraphs, line 578 INFO timestep: 0, next node: Elijahfurt
+2017-01-26 19:30:21,043 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,043 generategraphs, line 514 INFO timestep: 1, next node: Elijahfurt
+2017-01-26 19:30:21,043 generategraphs, line 526 INFO timestep: 1, edge: ('Stephenborough', 'Elijahfurt'), correct label: O, emitted label: O
+2017-01-26 19:30:21,044 generategraphs, line 536 INFO timestep: 1, switch setting: L @ node: Elijahfurt
+2017-01-26 19:30:21,044 generategraphs, line 545 INFO timestep: 1, considered node: Murphyview
+2017-01-26 19:30:21,044 generategraphs, line 563 INFO next edge: ('Elijahfurt', 'Murphyview'), correct label: L, emitted label: L
+2017-01-26 19:30:21,044 generategraphs, line 578 INFO timestep: 1, next node: Murphyview
+2017-01-26 19:30:21,044 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,044 generategraphs, line 514 INFO timestep: 2, next node: Murphyview
+2017-01-26 19:30:21,044 generategraphs, line 526 INFO timestep: 2, edge: ('Elijahfurt', 'Murphyview'), correct label: L, emitted label: O
+2017-01-26 19:30:21,044 generategraphs, line 536 INFO timestep: 2, switch setting: L @ node: Murphyview
+2017-01-26 19:30:21,044 generategraphs, line 545 INFO timestep: 2, considered node: West Rebekah
+2017-01-26 19:30:21,044 generategraphs, line 563 INFO next edge: ('Murphyview', 'West Rebekah'), correct label: O, emitted label: O
+2017-01-26 19:30:21,044 generategraphs, line 578 INFO timestep: 2, next node: West Rebekah
+2017-01-26 19:30:21,045 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,045 generategraphs, line 514 INFO timestep: 3, next node: West Rebekah
+2017-01-26 19:30:21,045 generategraphs, line 526 INFO timestep: 3, edge: ('Murphyview', 'West Rebekah'), correct label: R, emitted label: R
+2017-01-26 19:30:21,045 generategraphs, line 536 INFO timestep: 3, switch setting: L @ node: West Rebekah
+2017-01-26 19:30:21,045 generategraphs, line 545 INFO timestep: 3, considered node: Murphyview
+2017-01-26 19:30:21,045 generategraphs, line 545 INFO timestep: 3, considered node: Brownburgh
+2017-01-26 19:30:21,045 generategraphs, line 545 INFO timestep: 3, considered node: Nicholasview
+2017-01-26 19:30:21,045 generategraphs, line 563 INFO next edge: ('West Rebekah', 'Nicholasview'), correct label: O, emitted label: O
+2017-01-26 19:30:21,045 generategraphs, line 578 INFO timestep: 3, next node: Nicholasview
+2017-01-26 19:30:21,045 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,045 generategraphs, line 514 INFO timestep: 4, next node: Nicholasview
+2017-01-26 19:30:21,045 generategraphs, line 526 INFO timestep: 4, edge: ('West Rebekah', 'Nicholasview'), correct label: R, emitted label: R
+2017-01-26 19:30:21,046 generategraphs, line 536 INFO timestep: 4, switch setting: L @ node: Nicholasview
+2017-01-26 19:30:21,046 generategraphs, line 545 INFO timestep: 4, considered node: West Rebekah
+2017-01-26 19:30:21,046 generategraphs, line 545 INFO timestep: 4, considered node: Stephenborough
+2017-01-26 19:30:21,046 generategraphs, line 563 INFO next edge: ('Nicholasview', 'Stephenborough'), correct label: O, emitted label: R
+2017-01-26 19:30:21,046 generategraphs, line 578 INFO timestep: 4, next node: Stephenborough
+2017-01-26 19:30:21,046 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,046 generategraphs, line 514 INFO timestep: 5, next node: Stephenborough
+2017-01-26 19:30:21,046 generategraphs, line 526 INFO timestep: 5, edge: ('Nicholasview', 'Stephenborough'), correct label: O, emitted label: O
+2017-01-26 19:30:21,046 generategraphs, line 536 INFO timestep: 5, switch setting: L @ node: Stephenborough
+2017-01-26 19:30:21,046 generategraphs, line 545 INFO timestep: 5, considered node: Elijahfurt
+2017-01-26 19:30:21,046 generategraphs, line 563 INFO next edge: ('Stephenborough', 'Elijahfurt'), correct label: L, emitted label: L
+2017-01-26 19:30:21,046 generategraphs, line 578 INFO timestep: 5, next node: Elijahfurt
+2017-01-26 19:30:21,047 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,047 generategraphs, line 514 INFO timestep: 6, next node: Elijahfurt
+2017-01-26 19:30:21,047 generategraphs, line 526 INFO timestep: 6, edge: ('Stephenborough', 'Elijahfurt'), correct label: O, emitted label: O
+2017-01-26 19:30:21,047 generategraphs, line 536 INFO timestep: 6, switch setting: L @ node: Elijahfurt
+2017-01-26 19:30:21,047 generategraphs, line 545 INFO timestep: 6, considered node: Murphyview
+2017-01-26 19:30:21,047 generategraphs, line 563 INFO next edge: ('Elijahfurt', 'Murphyview'), correct label: L, emitted label: L
+2017-01-26 19:30:21,047 generategraphs, line 578 INFO timestep: 6, next node: Murphyview
+2017-01-26 19:30:21,047 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,047 generategraphs, line 514 INFO timestep: 7, next node: Murphyview
+2017-01-26 19:30:21,047 generategraphs, line 526 INFO timestep: 7, edge: ('Elijahfurt', 'Murphyview'), correct label: L, emitted label: L
+2017-01-26 19:30:21,047 generategraphs, line 536 INFO timestep: 7, switch setting: L @ node: Murphyview
+2017-01-26 19:30:21,047 generategraphs, line 545 INFO timestep: 7, considered node: West Rebekah
+2017-01-26 19:30:21,048 generategraphs, line 563 INFO next edge: ('Murphyview', 'West Rebekah'), correct label: O, emitted label: O
+2017-01-26 19:30:21,048 generategraphs, line 578 INFO timestep: 7, next node: West Rebekah
+2017-01-26 19:30:21,048 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,048 generategraphs, line 514 INFO timestep: 8, next node: West Rebekah
+2017-01-26 19:30:21,048 generategraphs, line 526 INFO timestep: 8, edge: ('Murphyview', 'West Rebekah'), correct label: R, emitted label: R
+2017-01-26 19:30:21,048 generategraphs, line 536 INFO timestep: 8, switch setting: L @ node: West Rebekah
+2017-01-26 19:30:21,048 generategraphs, line 545 INFO timestep: 8, considered node: Murphyview
+2017-01-26 19:30:21,048 generategraphs, line 545 INFO timestep: 8, considered node: Brownburgh
+2017-01-26 19:30:21,048 generategraphs, line 545 INFO timestep: 8, considered node: Nicholasview
+2017-01-26 19:30:21,048 generategraphs, line 563 INFO next edge: ('West Rebekah', 'Nicholasview'), correct label: O, emitted label: O
+2017-01-26 19:30:21,048 generategraphs, line 578 INFO timestep: 8, next node: Nicholasview
+2017-01-26 19:30:21,048 generategraphs, line 510 INFO timestep: 0
+2017-01-26 19:30:21,049 generategraphs, line 514 INFO timestep: 9, next node: Nicholasview
+2017-01-26 19:30:21,049 generategraphs, line 526 INFO timestep: 9, edge: ('West Rebekah', 'Nicholasview'), correct label: R, emitted label: R
+2017-01-26 19:30:21,049 generategraphs, line 536 INFO timestep: 9, switch setting: L @ node: Nicholasview
+2017-01-26 19:30:21,049 generategraphs, line 545 INFO timestep: 9, considered node: West Rebekah
+2017-01-26 19:30:21,049 generategraphs, line 545 INFO timestep: 9, considered node: Stephenborough
+2017-01-26 19:30:21,049 generategraphs, line 563 INFO next edge: ('Nicholasview', 'Stephenborough'), correct label: O, emitted label: O
+2017-01-26 19:30:21,049 generategraphs, line 578 INFO timestep: 9, next node: Stephenborough
+2017-01-26 19:30:21,049 generategraphs, line 585 INFO observations: ['O', 'L', 'O', 'L', 'O', 'O', 'R', 'O', 'R', 'R', 'O', 'L', 'O', 'L', 'L', 'O', 'R', 'O', 'R', 'O']
+2017-01-26 19:30:21,060 generategraphs, line 595 INFO ### Simulation ended ==<

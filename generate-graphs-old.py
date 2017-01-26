@@ -1,12 +1,14 @@
 import networkx as nx
 from networkx.utils import uniform_sequence
-import matplotlib.pyplot as plt
+# import matplotlib as mpl
+# import matplotlib.pyplot as plt
 from faker import Factory
 import random
 import logging
 import numpy as np
 import pandas as pd
 
+# mpl.use('Qt5Agg')
 """
 I think here is what we need to do for synthetic data:
 
@@ -38,7 +40,10 @@ GRAPH_DIM = 3
 TARGET_VERTICES_COUNT = pow(GRAPH_DIM, 2)
 LABELS = ['L', 'O', 'R' ]
 SWITCHES_VALUES = ['R', 'L']
-
+vertex1Key = 'V1'
+vertex2Key = 'V2'
+vertex1LabelKey = 'L1'
+vertex2LabelKey = 'L2'
 
 def create_fake_cities(fake, count):
   """"""
@@ -80,7 +85,8 @@ def visualize_graph(graph):
   plt.show()
 
 def generate_graph(labels):
-  G = nx.grid_graph([GRAPH_DIM, GRAPH_DIM])
+  # G = nx.grid_graph([GRAPH_DIM, GRAPH_DIM])
+  G = nx.grid_2d_graph(GRAPH_DIM, GRAPH_DIM)
 
   # G = nx.Graph()
   # print(cities)
@@ -127,11 +133,11 @@ def generate_graph(labels):
     neighbors = G.neighbors(node)
     G.add_edge(neighbors[0], neighbors[1])
   # for node in nodesToModify:
-  print('number of nodes to remove', len(nodesToRemove))
-  print('number of nodes to duplicate ', nodesToDuplicateN)
-  print('number of nodes untouched', TARGET_VERTICES_COUNT - len(nodesToRemove) - nodesToDuplicateN)
-  print('number of resulting nodes in new graph ',
-        TARGET_VERTICES_COUNT - len(nodesToRemove) - nodesToDuplicateN + 2 * nodesToDuplicateN)
+  # print('number of nodes to remove', len(nodesToRemove))
+  # print('number of nodes to duplicate ', nodesToDuplicateN)
+  # print('number of nodes untouched', TARGET_VERTICES_COUNT - len(nodesToRemove) - nodesToDuplicateN)
+  # print('number of resulting nodes in new graph ',
+  #       TARGET_VERTICES_COUNT - len(nodesToRemove) - nodesToDuplicateN + 2 * nodesToDuplicateN)
   G.remove_nodes_from(nodesToRemove)
   mapping = {G.nodes()[i]: labels[i] for i in range(len(G.nodes())) for label in labels}
   graph = nx.relabel_nodes(G, mapping, copy=True)
@@ -145,106 +151,169 @@ def label_nodes(graph, labels):
 
 def label_graph(graph, labels):
   assert all(x == 3 for x in list(nx.degree(graph).values()))
-  # mapping = {(edge[0], edge[1], edge): random.choice(labels) for edge in graph.edges(keys=True)}
+
+
+
+  # # Row
+  nodes = graph.nodes();
+  potentialLabels = LABELS
+  for node in graph.nodes():
+    mappingVertices1 = {}
+    mappingVertices1Label = {}
+
+    mappingVertices2 = {}
+    mappingVertices2Label = {}
+    idx1 = np.arange(3)
+    np.random.shuffle(idx1)
+    # vertex2labels = [x for x in tmpX if x in ['O', 'R', 'L']]
+    # idx1 = np.arange(3)
+    # np.random.shuffle(idx2)
+    idx_idx = 0
+    for neighbor in nx.neighbors(graph, node):
+      if vertex1Key not in graph[node][neighbor] and vertex1LabelKey not in graph[node][neighbor]:
+        # graph[node][neighbor][vertex1Key] = node
+        # graph[node][neighbor][vertex1LabelKey] = potentialLabels[idx1[idx_idx]]
+        mappingVertices1[(node, neighbor)] = node
+        mappingVertices1Label[(node, neighbor)] = potentialLabels[idx1[idx_idx]]  # labels[idx1[idx]]
+      elif vertex2Key not in graph[node][neighbor] and vertex2LabelKey not in graph[node][neighbor]:
+        # usedLabels = []
+        # for neighborNeighbor in range(len(graph.nodes())):
+        #   usedLabels.append(graph[neighborNeighbor][neighbor][vertex2LabelKey])
+        #   potentialLabels2 = [x for x in potentialLabels if x not in usedLabels]
+        # idx2 = np.arange(3)
+        # np.random.shuffle(idx2)
+        # graph[node][neighbor][vertex2Key] = node
+        # graph[node][neighbor][vertex2LabelKey] = potentialLabels[idx1[idx_idx]]
+        mappingVertices2[(node, neighbor)] = node
+        mappingVertices2Label[(node, neighbor)] = potentialLabels[idx1[idx_idx]]  # labels[idx1[idx]]
+      idx_idx = idx_idx + 1
+    nx.set_edge_attributes(graph, vertex1Key, mappingVertices1)
+    nx.set_edge_attributes(graph, vertex1LabelKey, mappingVertices1Label)
+    nx.set_edge_attributes(graph, vertex2Key, mappingVertices2)
+    nx.set_edge_attributes(graph, vertex2LabelKey, mappingVertices2Label)
+    # print(mappingVertices1)
+    print(mappingVertices1Label)
+    # print(mappingVertices2)
+    print(mappingVertices2Label)
+
+      # mapping1[(nodes[i], nodes[j])] = lbl
+
+
+
+
+
+  # for i in range(len(graph.nodes())):
+  #   idx1 = np.arange(len(potentialLabels))
+  #   np.random.shuffle(idx1)
+  #   idx_idx = 0
+  #   for j in range(i+1, len(graph.nodes())):
+  #     if (df.ix[i, j] == 1):
+  #       # lbl = np.random.choice(lbls, replace= False)
+  #       df.ix[i, j] = potentialLabels[idx1[idx_idx]] #lbl #lbls[idx1[idx]]
+  #       mappingVertices1[(list(df.index)[i], list(df.index)[j])] = list(df.index)[i]
+  #       mappingVertices1Label[(list(df.index)[i], list(df.index)[j])] = potentialLabels[idx1[idx_idx]]  # labels[idx1[idx]]
+  #
+  #       # mapping1[(nodes[i], nodes[j])] = potentialLabels[idx1[idx_idx]]  #labels[idx1[idx]]
+  #       idx_idx = idx_idx + 1
+  #
+  # print(mappingVertices1)
+  # print(mappingVertices1Label)
+  # nx.set_edge_attributes(graph, vertex1Key, mappingVertices1)
+  # nx.set_edge_attributes(graph, vertex1LabelKey, mappingVertices1Label)
+  #
+  # # Columns
+  # nodes = graph.nodes();
+  # potentialLabels = ['L', 'O', 'R']
+  # # for node in graph.nodes():
+  # #   idx1 = np.arange(3)
+  # #   np.random.shuffle(idx1)
+  # #   vertex2labels = [x for x in tmpX if x in ['O', 'R', 'L']]
+  # #   idx1 = np.arange(3)
+  # #   np.random.shuffle(idx2)
+  # #   idx_idx = 0
+  # #   for neighbor in nx.neighbors(graph, node):
+  # #     if vertex1Key not in graph[node][neighbor] and vertex1LabelKey not in graph[node][neighbor]:
+  # #       graph[node][neighbor][vertex1Key] = node
+  # #       graph[node][neighbor][vertex1LabelKey] = potentialLabels[idx1[idx_idx]]
+  # #     elif vertex2Key not in graph[node][neighbor] and vertex2LabelKey not in graph[node][neighbor]:
+  # #       # usedLabels = []
+  # #       # for neighborNeighbor in range(len(graph.nodes())):
+  # #       #   usedLabels.append(graph[neighborNeighbor][neighbor][vertex2LabelKey])
+  # #       #   potentialLabels2 = [x for x in potentialLabels if x not in usedLabels]
+  # #       # idx2 = np.arange(3)
+  # #       # np.random.shuffle(idx2)
+  # #       graph[node][neighbor][vertex2Key] = node
+  # #       graph[node][neighbor][vertex2LabelKey] = potentialLabels[idx1[idx_idx]]
+  # #
+  # #     mapping1[(nodes[i], nodes[j])] = lbl
+  # for i in range(len(graph.nodes())) :
+  #   idx1 = np.arange(len(potentialLabels))
+  #   np.random.shuffle(idx1)
+  #   idx_idx = 0
+  #   for j in range(i+1, len(graph.nodes())):
+  #     print("by column ", i, j)
+  #     if (df.ix[j, i] == 1):
+  #       # lbl = np.random.choice(lbls, replace= False)
+  #       df.ix[j, i] = potentialLabels[idx1[idx_idx]]  # lbl #lbls[idx1[idx]]
+  #       mappingVertices2[(list(df.index)[j], list(df.index)[i])] = list(df.index)[j]
+  #       mappingVertices2Label[(list(df.index)[j], list(df.index)[i])] = potentialLabels[idx1[idx_idx]]  # labels[idx1[idx]]
+  #       # mapping1[(nodes[i], nodes[j])] = potentialLabels[idx1[idx_idx]]  #labels[idx1[idx]]
+  #       idx_idx = idx_idx + 1
+
+  # print(mappingVertices2)
+  # print(mappingVertices2Label)
+  # nx.set_edge_attributes(graph, vertex2Key, mappingVertices2)
+  # nx.set_edge_attributes(graph, vertex2LabelKey, mappingVertices2Label)
+
+  # print(df)
+  # # Columns
+  # nodes = graph.nodes();
+  # for j in range(len(graph.nodes())):
+  #   # fltr = lambda x: (x != node);
+  #   # potentialNeighbors = list(filter(fltr, graph.nodes()));
+  #   # idx1 = np.arange(3)
+  #   # np.random.shuffle(idx1)
+  #   # idx = 0
+  #   # for neighbor in potentialNeighbors:
+  #   for i in range(j + 1, len(graph.nodes())):
+  #     # print(node, ' ', neighbor)
+  #     # print(df.head())
+  #     # print(idx)
+  #     # print(idx1[idx])
+  #     # print(labels[idx1[idx]])
+  #     # if(df.ix[node, neighbor]==1):
+  #     #   df.ix[node, neighbor] = labels[idx1[idx]]
+  #     # print(i, ',', j)
+  #     tmpX = list(df.ix[i, :])
+  #     tmpY = list(df.ix[:, j])
+  #     print(tmpX)
+  #     print(tmpY)
+  #     labelsX = [x for x in tmpX if x in ['O', 'R', 'L']]
+  #     print(labelsX)
+  #     labelsY = [y for y in tmpY if y in ['O', 'R', 'L']]
+  #     print(labelsY)
+  #     lbls = [item for item in labels if item not in labelsY and item not in labelsX]
+  #     print(lbls)
+  #     # idx1 = np.arange(len(lbls))
+  #     # np.random.shuffle(idx1)
+  #     idx = 0
+  #     if (df.ix[i, j] == 1):
+  #       if (len(lbls) > 0):
+  #         lbl = np.random.choice(lbls)
+  #         df.ix[i, j] = lbl  # lbls[idx1[idx]]
+  #         mapping2[(nodes[j], nodes[i])] = lbl  # labels[idx1[idx]]
+  #         idx = idx + 1
+  #       else:
+  #         df.ix[i, j] = '?'
+  #         mapping2[( nodes[j], nodes[i])] = '?'
+  #         # print(df.ix[node, :])
+  #         # print(df.ix[i, :])
+  # # print(df.ix[:, :])
+  # print(mapping2)
+  # nx.set_edge_attributes(graph, 'label2', mapping2)
   df = nx.to_pandas_dataframe(graph)
-  print(type(df))
-  mapping1 = {}
-  mapping2 = {}
-  # for node in graph.nodes():
-
-  # Row
-  nodes = graph.nodes();
-  for i in range(len(graph.nodes())):
-    # fltr = lambda x: (x != node);
-    # potentialNeighbors = list(filter(fltr, graph.nodes()));
-    # idx1 = np.arange(3)
-    # np.random.shuffle(idx1)
-    # idx = 0
-    # for neighbor in potentialNeighbors:
-    for j in range(i+1, len(graph.nodes())):
-      # print(node, ' ', neighbor)
-      # print(df.head())
-      # print(idx)
-      # print(idx1[idx])
-      # print(labels[idx1[idx]])
-      # if(df.ix[node, neighbor]==1):
-      #   df.ix[node, neighbor] = labels[idx1[idx]]
-      # print(i, ',', j)
-      tmpX = list(df.ix[i,:])
-      tmpY = list(df.ix[:,j])
-      print(tmpX)
-      print(tmpY)
-      labelsX = [x for x in tmpX if x in ['O', 'R', 'L']]
-      print(labelsX)
-      labelsY = [y for y in tmpY if y in ['O', 'R', 'L']]
-      print(labelsY)
-      lbls = [item for item in labels if item not in labelsY and item not in labelsX]
-      print(lbls)
-      # idx1 = np.arange(len(lbls))
-      # np.random.shuffle(idx1)
-      idx = 0
-      if (df.ix[i, j] == 1):
-        if(len(lbls)>0):
-          lbl = np.random.choice(lbls)
-          df.ix[i, j] = lbl #lbls[idx1[idx]]
-          mapping1[(nodes[i], nodes[j])] = lbl  #labels[idx1[idx]]
-          idx = idx + 1
-        else:
-          df.ix[i, j] = '?'
-          mapping1[(nodes[i], nodes[j])] = '?'
-    # print(df.ix[node, :])
-    # print(df.ix[i, :])
-  # print(df.ix[:, :])
-  print(mapping1)
-  nx.set_edge_attributes(graph, 'label1', mapping1)
-
-  # Columns
-  nodes = graph.nodes();
-  for j in range(len(graph.nodes())):
-    # fltr = lambda x: (x != node);
-    # potentialNeighbors = list(filter(fltr, graph.nodes()));
-    # idx1 = np.arange(3)
-    # np.random.shuffle(idx1)
-    # idx = 0
-    # for neighbor in potentialNeighbors:
-    for i in range(j + 1, len(graph.nodes())):
-      # print(node, ' ', neighbor)
-      # print(df.head())
-      # print(idx)
-      # print(idx1[idx])
-      # print(labels[idx1[idx]])
-      # if(df.ix[node, neighbor]==1):
-      #   df.ix[node, neighbor] = labels[idx1[idx]]
-      # print(i, ',', j)
-      tmpX = list(df.ix[i, :])
-      tmpY = list(df.ix[:, j])
-      print(tmpX)
-      print(tmpY)
-      labelsX = [x for x in tmpX if x in ['O', 'R', 'L']]
-      print(labelsX)
-      labelsY = [y for y in tmpY if y in ['O', 'R', 'L']]
-      print(labelsY)
-      lbls = [item for item in labels if item not in labelsY and item not in labelsX]
-      print(lbls)
-      # idx1 = np.arange(len(lbls))
-      # np.random.shuffle(idx1)
-      idx = 0
-      if (df.ix[i, j] == 1):
-        if (len(lbls) > 0):
-          lbl = np.random.choice(lbls)
-          df.ix[i, j] = lbl  # lbls[idx1[idx]]
-          mapping2[(nodes[j], nodes[i])] = lbl  # labels[idx1[idx]]
-          idx = idx + 1
-        else:
-          df.ix[i, j] = '?'
-          mapping2[( nodes[j], nodes[i])] = '?'
-          # print(df.ix[node, :])
-          # print(df.ix[i, :])
-  # print(df.ix[:, :])
-  print(mapping2)
-  nx.set_edge_attributes(graph, 'label2', mapping2)
-
-  print(df.ix[:,:])
+  # print(df.ix[:,:])
+  print(df.to_string())
   return nx.Graph(graph)
 
   # print(df[1,:])
@@ -311,28 +380,29 @@ def simulate(graph, timesteps):
 
 
 if __name__ == "__main__":
-  logging.basicConfig(filename='run.log', filemode='w', level=logging.DEBUG)
-  fake = Factory.create()
-  cities = create_fake_cities(fake, 2 * TARGET_VERTICES_COUNT)
+  # logging.basicConfig(filename='run.log', filemode='w', level=logging.DEBUG)
+  # fake = Factory.create()
+  # cities = create_fake_cities(fake, 2 * TARGET_VERTICES_COUNT)
 
-  graph = generate_graph(cities)
-  multiGraph = graph
+  # graph = generate_graph(cities)
+  # print(type(graph))
+  # multiGraph = graph
   # multiGraph = nx.MultiGraph(graph)
   # compute_histogram(multiGraph)
   # print(graph.nodes())
   # label_nodes(multiGraph, cities)
-  multiGraph = label_graph(multiGraph, LABELS)
-  multiGraph = set_switches(multiGraph, SWITCHES_VALUES)
+  # multiGraph = label_graph(multiGraph, LABELS)
+  # multiGraph = set_switches(multiGraph, SWITCHES_VALUES)
 
-  nx.write_gml(multiGraph, "graph.gml")
-  df = nx.to_pandas_dataframe(multiGraph)
-  print('########################## Daniel')
-  print(df)
+  # nx.write_gml(multiGraph, "graph.gml")
+  # df = nx.to_pandas_dataframe(multiGraph)
+  # print('########################## Daniel')
+  # print(df)
   # pd.DataFrame.to_csv("graph.csv", sep=',')
 
-  observations = simulate(multiGraph, 10)
-  print(observations)
-  visualize_graph(multiGraph)
+  # observations = simulate(multiGraph, 10)
+  # print(observations)
+  # visualize_graph(multiGraph)
   # am = nx.adjacency_matrix(multiGraph)
   # print("am")
   # print(am)
@@ -344,7 +414,7 @@ if __name__ == "__main__":
 
 
 
-  nx.write_gml(multiGraph, "graph.gml")
+  # nx.write_gml(multiGraph, "graph.gml")
   # mygraph = nx.read_gml("path.to.file")
 
 

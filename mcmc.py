@@ -1,7 +1,14 @@
 import numpy as np
 import scipy as sp
 import pandas as pd
+import matplotlib
+matplotlib.rcParams['backend'] = 'TkAgg'
+# matplotlib.rcParams['backend'] = 'WXAgg'
+# matplotlib.rcParams['backend'] = 'QTAgg'
+# matplotlib.rcParams['backend'] = 'Qt4Agg'
+# matplotlib.rcParams['backend'] = 'Qt5Agg'
 import matplotlib.pyplot as plt
+# plt.switch_backend('Qt5Agg')
 import seaborn as sns
 from scipy.stats import norm
 from random import randint
@@ -26,7 +33,6 @@ def get_sigma(t):
     a[low_values_indices] = 0
     a =  list(map(int, a))
     return settings[a]
-
 
 
 def MCMC_MH(obs, samples=4, mu_init=.5, proposal_width=.5, plot=False, mu_prior_mu=0, mu_prior_sd=1.):
@@ -70,7 +76,7 @@ def MCMC_MH(obs, samples=4, mu_init=.5, proposal_width=.5, plot=False, mu_prior_
         # Usually would include prior probability, which we neglect here for simplicity
         accept = np.random.rand() < p_accept
         if plot:
-            plot_proposal(mu_current, mu_proposal, mu_prior_mu, mu_prior_sd, obs, accept, posterior, i)
+            sns.plot_proposal(mu_current, mu_proposal, mu_prior_mu, mu_prior_sd, obs, accept, posterior, i)
         
         if accept:
             # Update position
