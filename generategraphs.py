@@ -507,7 +507,7 @@ def simulate2(graph, timesteps, observationsFolder, observationsFilename, logger
     potentialEdges = [(node, neighbor) for neighbor in nx.neighbors(graph, node)]
     idx = np.random.choice(range(len(potentialEdges)))
     startEdge = potentialEdges[idx]
-    for timestep in range(timesteps + 1):
+    for timestep in range(timesteps):
       logger.info('timestep: {}'.format(str(0)))
       # observations.append(0)
       # theWalk.append(0)
@@ -620,10 +620,12 @@ def generate_and_simulate():
     current_dim = np.random.choice(range(MIN_GRAPH_DIM, MAX_GRAPH_DIM))
     log.info("dim {}".format(current_dim))
     current_n_target_vertices = pow(current_dim, 2)
-    current_timesteps_count = current_n_target_vertices
+    # current_timesteps_count = current_n_target_vertices
+
     cities = create_fake_cities(fake, 2 * current_n_target_vertices)
 
     error, graph = create_graph(cities, current_dim, log)
+    current_timesteps_count = len(graph.nodes())
     writeFiles = writeFiles and not error
 
     compute_histogram(graph, log)

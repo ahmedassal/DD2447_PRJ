@@ -40,7 +40,7 @@ def main():
   # print(simulations)
   for sim_idx in range(len(simulations)):
     convertedObs = convertObservations(simulations[sim_idx]['observations'])
-    simulations[sim_idx]['sigma'] = getSigma(simulations[sim_idx]['observations'])
+    simulations[sim_idx]['sigma'] = getSigma(convertedObs[::2])
     # simulations[sim_idx]['emissionsMat'] = getEmission(simulations[sim_idx]['sigma'])
   #   simulations[sim_idx]['transMat'] = getTransitionMat(simulations[sim_idx]['sigma'], n_vertices, graph)
 
@@ -78,7 +78,9 @@ def getObservations(observations):
 
 def getSigma(obs):
     ## Setting up my prior beliefs and how many samples i want
-    mcmcSamples = mc.MCMC_MH(obs, samples =100, mu_prior_mu=[0,0,0,0], mu_prior_sd=[1.,1.,1.,1.])
+    mu = [0] * len(obs)
+    sd = [1] * len(obs)
+    mcmcSamples = mc.MCMC_MH(obs, samples =100, mu_prior_mu=mu, mu_prior_sd=sd)
     return mc.get_sigma(mcmcSamples[-1]) # returns last switchsetting,for example ['L','R']
 
 def getEmission(sigma):
