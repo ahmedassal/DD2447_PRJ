@@ -1,0 +1,115 @@
+2017-01-26 19:35:35,321 generategraphs, line 619 INFO Experiment# 0
+2017-01-26 19:35:35,321 generategraphs, line 621 INFO dim 3
+2017-01-26 19:35:35,330 generategraphs, line 128 INFO ### Graph generation started ==>
+2017-01-26 19:35:35,331 generategraphs, line 175 INFO ### Graph generation ended ==<
+2017-01-26 19:35:35,331 generategraphs, line 92 INFO Degree sequence [3, 3, 3, 3, 3, 3]
+2017-01-26 19:35:35,331 generategraphs, line 93 INFO Degree histogram
+2017-01-26 19:35:35,331 generategraphs, line 100 INFO degree #nodes
+2017-01-26 19:35:35,331 generategraphs, line 102 INFO 3 6
+2017-01-26 19:35:35,331 generategraphs, line 186 INFO ### Labels setting started ==>
+2017-01-26 19:35:35,331 generategraphs, line 234 INFO {('Onealbury', 'Mccarthyfort'): 'O', ('Onealbury', 'Dalemouth'): 'L', ('Onealbury', 'Tiffanyton'): 'R'}
+2017-01-26 19:35:35,331 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,331 generategraphs, line 234 INFO {('Hernandezfurt', 'Mccarthyfort'): 'R', ('Hernandezfurt', 'Dalemouth'): 'L', ('Hernandezfurt', 'West Luisfort'): 'O'}
+2017-01-26 19:35:35,332 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,332 generategraphs, line 234 INFO {('Mccarthyfort', 'Hernandezfurt'): 'R', ('Mccarthyfort', 'Onealbury'): 'L', ('Mccarthyfort', 'West Luisfort'): 'O'}
+2017-01-26 19:35:35,332 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,332 generategraphs, line 234 INFO {('Dalemouth', 'Hernandezfurt'): 'O', ('Dalemouth', 'Onealbury'): 'L', ('Dalemouth', 'Tiffanyton'): 'R'}
+2017-01-26 19:35:35,332 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,332 generategraphs, line 234 INFO {('Tiffanyton', 'Onealbury'): 'L', ('Tiffanyton', 'West Luisfort'): 'O', ('Tiffanyton', 'Dalemouth'): 'R'}
+2017-01-26 19:35:35,332 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,332 generategraphs, line 234 INFO {('West Luisfort', 'Mccarthyfort'): 'R', ('West Luisfort', 'Tiffanyton'): 'O', ('West Luisfort', 'Hernandezfurt'): 'L'}
+2017-01-26 19:35:35,332 generategraphs, line 235 INFO {}
+2017-01-26 19:35:35,332 generategraphs, line 386 INFO ### Labels setting ended ==<
+2017-01-26 19:35:35,332 generategraphs, line 393 INFO ### Switches setting started ==>
+2017-01-26 19:35:35,333 generategraphs, line 395 INFO {'Onealbury': 'L', 'Hernandezfurt': 'R', 'Dalemouth': 'L', 'Tiffanyton': 'L', 'Mccarthyfort': 'R', 'West Luisfort': 'L'}
+2017-01-26 19:35:35,333 generategraphs, line 397 INFO ### Switches setting ended ==<
+2017-01-26 19:35:35,339 generategraphs, line 642 ERROR Unable to write file sim-709458-170126-193535-exp-0.gml
+2017-01-26 19:35:35,340 generategraphs, line 493 INFO ### Simulation started ==>
+2017-01-26 19:35:35,340 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,340 generategraphs, line 515 INFO timestep: 0, next node: Hernandezfurt
+2017-01-26 19:35:35,340 generategraphs, line 527 INFO timestep: 0, edge: ('Hernandezfurt', 'Dalemouth'), correct label: L, emitted label: L
+2017-01-26 19:35:35,340 generategraphs, line 537 INFO timestep: 0, switch setting: R @ node: Hernandezfurt
+2017-01-26 19:35:35,340 generategraphs, line 546 INFO timestep: 0, considered node: Dalemouth
+2017-01-26 19:35:35,340 generategraphs, line 546 INFO timestep: 0, considered node: Mccarthyfort
+2017-01-26 19:35:35,340 generategraphs, line 546 INFO timestep: 0, considered node: West Luisfort
+2017-01-26 19:35:35,340 generategraphs, line 564 INFO next edge: ('Hernandezfurt', 'West Luisfort'), correct label: O, emitted label: L
+2017-01-26 19:35:35,341 generategraphs, line 579 INFO timestep: 0, next node: West Luisfort
+2017-01-26 19:35:35,341 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,341 generategraphs, line 515 INFO timestep: 1, next node: West Luisfort
+2017-01-26 19:35:35,341 generategraphs, line 527 INFO timestep: 1, edge: ('Hernandezfurt', 'West Luisfort'), correct label: L, emitted label: L
+2017-01-26 19:35:35,341 generategraphs, line 537 INFO timestep: 1, switch setting: L @ node: West Luisfort
+2017-01-26 19:35:35,341 generategraphs, line 546 INFO timestep: 1, considered node: Hernandezfurt
+2017-01-26 19:35:35,341 generategraphs, line 546 INFO timestep: 1, considered node: Mccarthyfort
+2017-01-26 19:35:35,341 generategraphs, line 546 INFO timestep: 1, considered node: Tiffanyton
+2017-01-26 19:35:35,341 generategraphs, line 564 INFO next edge: ('West Luisfort', 'Tiffanyton'), correct label: O, emitted label: O
+2017-01-26 19:35:35,341 generategraphs, line 579 INFO timestep: 1, next node: Tiffanyton
+2017-01-26 19:35:35,341 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,341 generategraphs, line 515 INFO timestep: 2, next node: Tiffanyton
+2017-01-26 19:35:35,342 generategraphs, line 527 INFO timestep: 2, edge: ('West Luisfort', 'Tiffanyton'), correct label: O, emitted label: L
+2017-01-26 19:35:35,342 generategraphs, line 537 INFO timestep: 2, switch setting: L @ node: Tiffanyton
+2017-01-26 19:35:35,342 generategraphs, line 546 INFO timestep: 2, considered node: Onealbury
+2017-01-26 19:35:35,342 generategraphs, line 564 INFO next edge: ('Tiffanyton', 'Onealbury'), correct label: L, emitted label: L
+2017-01-26 19:35:35,342 generategraphs, line 579 INFO timestep: 2, next node: Onealbury
+2017-01-26 19:35:35,342 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,342 generategraphs, line 515 INFO timestep: 3, next node: Onealbury
+2017-01-26 19:35:35,342 generategraphs, line 527 INFO timestep: 3, edge: ('Tiffanyton', 'Onealbury'), correct label: R, emitted label: R
+2017-01-26 19:35:35,342 generategraphs, line 537 INFO timestep: 3, switch setting: L @ node: Onealbury
+2017-01-26 19:35:35,342 generategraphs, line 546 INFO timestep: 3, considered node: Dalemouth
+2017-01-26 19:35:35,342 generategraphs, line 546 INFO timestep: 3, considered node: Mccarthyfort
+2017-01-26 19:35:35,343 generategraphs, line 564 INFO next edge: ('Onealbury', 'Mccarthyfort'), correct label: O, emitted label: O
+2017-01-26 19:35:35,343 generategraphs, line 579 INFO timestep: 3, next node: Mccarthyfort
+2017-01-26 19:35:35,343 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,343 generategraphs, line 515 INFO timestep: 4, next node: Mccarthyfort
+2017-01-26 19:35:35,343 generategraphs, line 527 INFO timestep: 4, edge: ('Onealbury', 'Mccarthyfort'), correct label: L, emitted label: L
+2017-01-26 19:35:35,343 generategraphs, line 537 INFO timestep: 4, switch setting: R @ node: Mccarthyfort
+2017-01-26 19:35:35,343 generategraphs, line 546 INFO timestep: 4, considered node: Onealbury
+2017-01-26 19:35:35,343 generategraphs, line 546 INFO timestep: 4, considered node: Hernandezfurt
+2017-01-26 19:35:35,343 generategraphs, line 546 INFO timestep: 4, considered node: West Luisfort
+2017-01-26 19:35:35,343 generategraphs, line 564 INFO next edge: ('Mccarthyfort', 'West Luisfort'), correct label: O, emitted label: O
+2017-01-26 19:35:35,343 generategraphs, line 579 INFO timestep: 4, next node: West Luisfort
+2017-01-26 19:35:35,343 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,344 generategraphs, line 515 INFO timestep: 5, next node: West Luisfort
+2017-01-26 19:35:35,344 generategraphs, line 527 INFO timestep: 5, edge: ('Mccarthyfort', 'West Luisfort'), correct label: R, emitted label: R
+2017-01-26 19:35:35,344 generategraphs, line 537 INFO timestep: 5, switch setting: L @ node: West Luisfort
+2017-01-26 19:35:35,344 generategraphs, line 546 INFO timestep: 5, considered node: Hernandezfurt
+2017-01-26 19:35:35,344 generategraphs, line 546 INFO timestep: 5, considered node: Mccarthyfort
+2017-01-26 19:35:35,344 generategraphs, line 546 INFO timestep: 5, considered node: Tiffanyton
+2017-01-26 19:35:35,344 generategraphs, line 564 INFO next edge: ('West Luisfort', 'Tiffanyton'), correct label: O, emitted label: R
+2017-01-26 19:35:35,344 generategraphs, line 579 INFO timestep: 5, next node: Tiffanyton
+2017-01-26 19:35:35,344 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,344 generategraphs, line 515 INFO timestep: 6, next node: Tiffanyton
+2017-01-26 19:35:35,344 generategraphs, line 527 INFO timestep: 6, edge: ('West Luisfort', 'Tiffanyton'), correct label: O, emitted label: O
+2017-01-26 19:35:35,345 generategraphs, line 537 INFO timestep: 6, switch setting: L @ node: Tiffanyton
+2017-01-26 19:35:35,345 generategraphs, line 546 INFO timestep: 6, considered node: Onealbury
+2017-01-26 19:35:35,345 generategraphs, line 564 INFO next edge: ('Tiffanyton', 'Onealbury'), correct label: L, emitted label: L
+2017-01-26 19:35:35,345 generategraphs, line 579 INFO timestep: 6, next node: Onealbury
+2017-01-26 19:35:35,345 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,345 generategraphs, line 515 INFO timestep: 7, next node: Onealbury
+2017-01-26 19:35:35,345 generategraphs, line 527 INFO timestep: 7, edge: ('Tiffanyton', 'Onealbury'), correct label: R, emitted label: R
+2017-01-26 19:35:35,345 generategraphs, line 537 INFO timestep: 7, switch setting: L @ node: Onealbury
+2017-01-26 19:35:35,345 generategraphs, line 546 INFO timestep: 7, considered node: Dalemouth
+2017-01-26 19:35:35,345 generategraphs, line 546 INFO timestep: 7, considered node: Mccarthyfort
+2017-01-26 19:35:35,345 generategraphs, line 564 INFO next edge: ('Onealbury', 'Mccarthyfort'), correct label: O, emitted label: O
+2017-01-26 19:35:35,346 generategraphs, line 579 INFO timestep: 7, next node: Mccarthyfort
+2017-01-26 19:35:35,346 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,346 generategraphs, line 515 INFO timestep: 8, next node: Mccarthyfort
+2017-01-26 19:35:35,346 generategraphs, line 527 INFO timestep: 8, edge: ('Onealbury', 'Mccarthyfort'), correct label: L, emitted label: L
+2017-01-26 19:35:35,346 generategraphs, line 537 INFO timestep: 8, switch setting: R @ node: Mccarthyfort
+2017-01-26 19:35:35,346 generategraphs, line 546 INFO timestep: 8, considered node: Onealbury
+2017-01-26 19:35:35,346 generategraphs, line 546 INFO timestep: 8, considered node: Hernandezfurt
+2017-01-26 19:35:35,346 generategraphs, line 546 INFO timestep: 8, considered node: West Luisfort
+2017-01-26 19:35:35,346 generategraphs, line 564 INFO next edge: ('Mccarthyfort', 'West Luisfort'), correct label: O, emitted label: O
+2017-01-26 19:35:35,346 generategraphs, line 579 INFO timestep: 8, next node: West Luisfort
+2017-01-26 19:35:35,346 generategraphs, line 511 INFO timestep: 0
+2017-01-26 19:35:35,346 generategraphs, line 515 INFO timestep: 9, next node: West Luisfort
+2017-01-26 19:35:35,347 generategraphs, line 527 INFO timestep: 9, edge: ('Mccarthyfort', 'West Luisfort'), correct label: R, emitted label: R
+2017-01-26 19:35:35,347 generategraphs, line 537 INFO timestep: 9, switch setting: L @ node: West Luisfort
+2017-01-26 19:35:35,347 generategraphs, line 546 INFO timestep: 9, considered node: Hernandezfurt
+2017-01-26 19:35:35,347 generategraphs, line 546 INFO timestep: 9, considered node: Mccarthyfort
+2017-01-26 19:35:35,347 generategraphs, line 546 INFO timestep: 9, considered node: Tiffanyton
+2017-01-26 19:35:35,347 generategraphs, line 564 INFO next edge: ('West Luisfort', 'Tiffanyton'), correct label: O, emitted label: O
+2017-01-26 19:35:35,347 generategraphs, line 579 INFO timestep: 9, next node: Tiffanyton
+2017-01-26 19:35:35,347 generategraphs, line 586 INFO observations: ['L', 'L', 'L', 'O', 'L', 'L', 'R', 'O', 'L', 'O', 'R', 'R', 'O', 'L', 'R', 'O', 'L', 'O', 'R', 'O']
+2017-01-26 19:35:35,358 generategraphs, line 596 INFO ### Simulation ended ==<
+2017-01-26 19:35:35,361 generategraphs, line 106 INFO ### Graph plotting started ==>
+2017-01-26 19:35:38,773 generategraphs, line 122 INFO ### Graph plotting ended ==<

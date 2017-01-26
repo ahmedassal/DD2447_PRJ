@@ -48,15 +48,16 @@ CONSTATS
 MAX_EDGES_PER_VERTEX = 3
 GRAPH_DIM = 3
 MIN_GRAPH_DIM = 3
-MAX_GRAPH_DIM = 10
+MAX_GRAPH_DIM = 4
 TARGET_VERTICES_COUNT = pow(GRAPH_DIM, 2)
 LABELS = ['L', 'O', 'R' ]
 SWITCHES_VALUES = ['R', 'L']
-EXPERIMENTS_COUNT = 3
+EXPERIMENTS_COUNT = 1 #3
 vertex1Key = 'V1'
 vertex2Key = 'V2'
 vertex1LabelKey = 'L1'
 vertex2LabelKey = 'L2'
+ERROR_PROB = 0.05
 
 def stringizer(item):
   return str(item)
@@ -172,7 +173,8 @@ def create_graph(labels, dim, logger):
   mapping = {G.nodes()[i]: labels[i] for i in range(len(G.nodes())) for label in labels}
   graph = nx.relabel_nodes(G, mapping, copy=True)
   logger.info("### Graph generation ended ==<")
-  return graph
+  error = False
+  return error, graph
 
 def label_nodes(graph, labels):
   mapping = {graph.nodes()[i]: labels[i] for i in range(len(graph.nodes())) for label in labels}
@@ -184,6 +186,8 @@ def label_graph(graph, labels, logger):
   logger.info("### Labels setting started ==>")
   if(any(x != 3 for x in list(nx.degree(graph).values()))):
     logger.error("### some graph's nodes do not have a degree of 3 !!!!")
+    error = True
+    graph = None
   else:
     # # Row
     nodes = graph.nodes();
@@ -348,7 +352,9 @@ def label_graph(graph, labels, logger):
     # df = nx.to_pandas_dataframe(graph)
     # print(df.ix[:,:])
     # print(df.to_string())
-    return nx.Graph(graph)
+
+    error = False
+    # return nx.Graph(graph)
 
     # print(df[1,:])
     # for node in graph.nodes():
@@ -378,18 +384,24 @@ def label_graph(graph, labels, logger):
     # #   for neighbor in graph.neighbors(node):
     # #     neighborLabel = random.choice(LABELS)
   logger.info("### Labels setting ended ==<")
+  return error, graph
 
 def set_switches(graph, switches_values, logger):
   try:
+    error = False
   # if(type(graph)!="NoneType"):
     logger.info("### Switches setting started ==>")
     mapping = {node: np.random.choice(switches_values)for node in graph.nodes()}
     logger.info(mapping)
     nx.set_node_attributes(graph, 'sw', mapping)
     logger.info("### Switches setting ended ==<")
-    return graph
+
   except:
     logger.error("### Graph is empty !!!!")
+    error = True
+
+  finally:
+    return error, graph
 
 def simulate(graph, timesteps, observationsFolder, observationsFilename, logger):
   try:
@@ -447,9 +459,9 @@ def simulate(graph, timesteps, observationsFolder, observationsFilename, logger)
     logger.info('observations: {}'.format(str(observations)))
     # print('{0}/{1}.txt'.format(observationsFolder, observationsFilename))
     with open('{0}/{1}.txt'.format(observationsFolder, observationsFilename), "w") as text_file:
-      text_file.writelines('{0} '.format(str(observationsFilename)))
-      text_file.writelines('{0} '.format(observations.__len__()))
-      text_file.writelines('{0} '.format(observations))
+      text_file.writelines('{0}\n'.format(str(observationsFilename)))
+      text_file.writelines('{0}\n'.format(observations.__len__()))
+      text_file.writelines('{0}\n'.format(observations))
 
     with open('{0}/{1}.pickle'.format(observationsFolder, observationsFilename), 'wb') as f:
       # Pickle the 'data' dictionary using the highest protocol available.
@@ -459,21 +471,149 @@ def simulate(graph, timesteps, observationsFolder, observationsFilename, logger)
   except:
     logger.error("### Graph is empty !!!!")
 
+def getEdgeLabel(graph, edge, node):
+  return graph[edge[0]][edge[1]][node]
+
+def getStochasticLabel(p, correctLabel, wrongLabels):
+  labelProb  = np.random.random_sample()
+  # print("prob ", labelProb)
+  if labelProb <= (1-p):
+    return correctLabel
+  else:
+    return np.random.choice(wrongLabels)
 
 
 
-if __name__ == "__main__":
+def traverseNode(graph, node):
+  pass
+
+def simulate2(graph, timesteps, observationsFolder, observationsFilename, logger):
+  error = False
+  try:
+    logger.info("### Simulation started ==>")
+    observations = []
+    theWalk = []
+
+
+    node = np.random.choice(graph.nodes())
+    # print("node ", node)
+
+
+    # logger.info('start node: {}'.format(node))
+    # theWalk.append(node)
+    # observations.append(node)
+
+
+    potentialEdges = [(node, neighbor) for neighbor in nx.neighbors(graph, node)]
+    idx = np.random.choice(range(len(potentialEdges)))
+    startEdge = potentialEdges[idx]
+    for timestep in range(timesteps + 1):
+      logger.info('timestep: {}'.format(str(0)))
+      # observations.append(0)
+      # theWalk.append(0)
+
+      logger.info('timestep: {0}, next node: {1}'.format(timestep, node))
+      # theWalk.append(node)
+      # observations.append(node)
+
+
+      # print("edge ", startEdge)
+
+      startEdgeCorrectLabel = getEdgeLabel(graph, startEdge, node)
+      startEdgeWrongLabels = list(set(LABELS).difference(set(startEdgeCorrectLabel)))
+      startEdgeEmittedLabel = getStochasticLabel(ERROR_PROB, startEdgeCorrectLabel, startEdgeWrongLabels)
+
+      logger.info(
+        'timestep: {0}, edge: {1}, correct label: {2}, emitted label: {3}'.format(timestep, startEdge, startEdgeCorrectLabel, startEdgeEmittedLabel))
+      # theWalk.append(edge, edgeLabel)
+      observations.append(startEdgeEmittedLabel)
+
+      # print("edgeCorrectLabel ", edgeCorrectLabel)
+      # print("wrong labels ", edgeWrongLabels)
+      # print("stochastic label ", edgeEmittedLabel)
+
+      switchVal = nx.get_node_attributes(graph, 'sw')[node]
+      # theWalk.append('switch: {}'.format(str(switchVal)))
+      logger.info('timestep: {0}, switch setting: {1} @ node: {2}'.format(timestep, switchVal, node))
+      # print(switchVal)
+
+      if startEdgeCorrectLabel == 'O':
+        targetedLabel = switchVal
+      else:
+        targetedLabel = 'O'
+
+      for neighbor in nx.neighbors(graph, node):
+        logger.info('timestep: {0}, considered node: {1}'.format(timestep, neighbor))
+        # theWalk.append('neighbor: {}'.format(str(neighbor)))
+
+        # labelVal = graph[node][neighbor][node]
+        endEdgeCorrectLabel = getEdgeLabel(graph, (node, neighbor), node)
+        # labelVal = nx.get_edge_attributes(graph, node)
+        # # print(labelVal)
+        # if labelVal.__contains__((node, neighbor)) :
+        #   labelVal = labelVal[(node, neighbor)]
+        # elif labelVal.__contains__((neighbor, node)):
+        #   labelVal = labelVal[(neighbor, node)]
+        # print(labelVal)
+        # if graph[node][neighbor]['label1'] == graph[node]['switch']:
+        if endEdgeCorrectLabel == targetedLabel:
+          endEdgeWrongLabels = list(set(LABELS).difference(set(endEdgeCorrectLabel)))
+          endEdgeEmittedLabel = getStochasticLabel(ERROR_PROB, endEdgeCorrectLabel, endEdgeWrongLabels)
+
+          logger.info('next edge: {0}, correct label: {1}, emitted label: {2}'\
+                      .format((node, neighbor), endEdgeCorrectLabel, endEdgeEmittedLabel))
+          # logger.info('edge label: {}'.format(str(labelVal)))
+          # theWalk.append('label: {}'.format(str(labelVal)))
+          observations.append(endEdgeEmittedLabel)
+
+
+          # edgeCorrectLabel = getEdgeLabel(graph, (node, neighbor), neighbor)
+          # edgeWrongLabels = list(set(LABELS).difference(set(edgeCorrectLabel)))
+          # edgeEmittedLabel = getStochasticLabel(ERROR_PROB, edgeCorrectLabel, edgeWrongLabels)
+          # logger.info('next edge: {0}, correct label: {1}, emitted label: {2}' \
+          #             .format((neighbor, node), edgeCorrectLabel, edgeEmittedLabel))
+          # observations.append(edgeEmittedLabel)
+
+          startEdge = (node, neighbor)
+          node = neighbor
+          logger.info('timestep: {0}, next node: {1}'.format(timestep, node))
+          # theWalk.append(node)
+          # observations.append(node)
+          break
+
+
+    print("obs ", observations)
+    logger.info('observations: {}'.format(str(observations)))
+    # print('{0}/{1}.txt'.format(observationsFolder, observationsFilename))
+    with open('{0}/{1}.txt'.format(observationsFolder, observationsFilename), "w") as text_file:
+      text_file.writelines('{0}\n'.format(str(observationsFilename)))
+      text_file.writelines('{0}\n'.format(observations.__len__()))
+      text_file.writelines('{0}\n'.format(observations))
+
+    with open('{0}/{1}.pickle'.format(observationsFolder, observationsFilename), 'wb') as f:
+      # Pickle the 'data' dictionary using the highest protocol available.
+      pickle.dump(observations, f, pickle.HIGHEST_PROTOCOL)
+    logger.info("### Simulation ended ==<")
+    return error, observations
+  except:
+    error = True
+    logger.error("### Graph is empty !!!!")
+    return error, None
+
+def generate_and_simulate():
   # np.random.seed(1234)
   fake = Factory.create()
-  logsFolder='logs'
+  logsFolder = 'logs'
   networksFolder = 'networks'
   observationsFolder = 'observations'
-  graphsFolder  = 'graphs'
-
+  graphsFolder = 'graphs'
+  simulationsNamesFile = "simulations"
   n_run = np.random.choice(range(1000000))
   timestr = time.strftime("%y%m%d-%H%M%S")
   for experiment_idx in range(EXPERIMENTS_COUNT):
-    simultionName = "-".join(['sim',str(n_run), str(timestr),'exp',str(experiment_idx)])
+    simultionName = "-".join(['sim', str(n_run), str(timestr), 'exp', str(experiment_idx)])
+    writeFiles = True
+
     log = makelog('{}/{}.log'.format(logsFolder, simultionName))
     # logging.basicConfig(filename='{}.log'.format(simultionName), filemode='w', level=logging.DEBUG)
     log.info("Experiment# {}".format(experiment_idx))
@@ -482,21 +622,40 @@ if __name__ == "__main__":
     current_n_target_vertices = pow(current_dim, 2)
     current_timesteps_count = current_n_target_vertices
     cities = create_fake_cities(fake, 2 * current_n_target_vertices)
-    graph = create_graph(cities, current_dim, log)
-    compute_histogram(graph,log)
-    graph = label_graph(graph, LABELS, log)
-    graph = set_switches(graph, SWITCHES_VALUES, log)
+
+    error, graph = create_graph(cities, current_dim, log)
+    writeFiles = writeFiles and not error
+
+    compute_histogram(graph, log)
+
+    error, graph = label_graph(graph, LABELS, log)
+    writeFiles = writeFiles and not error
+
+    error, graph = set_switches(graph, SWITCHES_VALUES, log)
+    writeFiles = writeFiles and not error
 
     try:
+      error = False
       nx.write_gml(graph, '{}\{}.gml'.format(networksFolder, simultionName), stringizer=stringizer)
     except:
       print('Unable to write file {}.gml'.format(simultionName))
       log.error('Unable to write file {}.gml'.format(simultionName))
+      error = False
+    finally:
+      writeFiles = writeFiles and not error
 
-    observations = simulate(graph, current_timesteps_count, \
+    print("Write File for sim {0} ? {1}".format(simulationsNamesFile, writeFiles))
+
+
+    error, observations = simulate2(graph, current_timesteps_count, \
                             observationsFolder=observationsFolder, observationsFilename=simultionName, logger=log)
+    writeFiles = writeFiles and not error
+
+    if (writeFiles):
+      with open('{0}.txt'.format(simulationsNamesFile), "a+") as text_file:
+        text_file.writelines('{0}\n'.format(simultionName))
+      visualize_graph(graph, graphsFolder, simultionName, log)
     # print(observations)
-    visualize_graph(graph, graphsFolder, simultionName, log)
 
 
     # close logger
@@ -512,19 +671,23 @@ if __name__ == "__main__":
 
 
 
-  # label_nodes(graph, cities)
+    # label_nodes(graph, cities)
 
 
 
-  # df = nx.to_pandas_dataframe(graph)
-  # print('########################## Daniel')
-  # print(df)
-  # pd.DataFrame.to_csv("graph.csv", sep=',')
+    # df = nx.to_pandas_dataframe(graph)
+    # print('########################## Daniel')
+    # print(df)
+    # pd.DataFrame.to_csv("graph.csv", sep=',')
 
 
-  # print(observations)
+    # print(observations)
 
-  # mygraph = nx.read_gml("path.to.file")
+    # mygraph = nx.read_gml("path.to.file")
+
+
+if __name__ == "__main__":
+  generate_and_simulate()
 
 
 
