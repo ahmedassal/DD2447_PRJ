@@ -39,10 +39,8 @@ def main():
 
   # print(simulations)
   for sim_idx in range(len(simulations)):
-    print(simulations[sim_idx]['observations'])
     convertedObs = convertObservations(simulations[sim_idx]['observations'])
-    print(convertedObs)
-    # simulations[sim_idx]['sigma'] = getSigma(simulations[sim_idx]['observations'])
+    simulations[sim_idx]['sigma'] = getSigma(simulations[sim_idx]['observations'])
     # simulations[sim_idx]['emissionsMat'] = getEmission(simulations[sim_idx]['sigma'])
   #   simulations[sim_idx]['transMat'] = getTransitionMat(simulations[sim_idx]['sigma'], n_vertices, graph)
 
@@ -60,8 +58,6 @@ def main():
 
 def convertObservations(observations):
   convertedObs = []
-  print(type(observations))
-  print(len(observations))
   for obs in observations:
     if obs == 'L':
       convertedObs.append(-1)
