@@ -30,10 +30,26 @@ def calc_q_probability(sigma, postMeans):
             low.append(0)
     p,i = mvn.mvnun(low,upp,postMeans,   np.identity(len(postMeans))*1 )
     #print('it work :D:D',p)
+
     return p
 
-def test():
+def test_q():
     return calc_q_probability([1,-1],  [0.3,0.1])
+
+def getAllCombinationOfSizeNSigma(n):
+    ret = []
+    for i in range(1<<n):
+        s=bin(i)[2:]
+        s='0'*(n-len(s))+s
+        sig = np.array(list(map(int,list(s))))
+        indices = sig == 0
+        sig[indices] = -1
+        ret.append (list(sig ))
+    return ret
+
+
+
+
 
 def example():
     #obs = [-1,-1,1,1]
