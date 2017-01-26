@@ -1,14 +1,14 @@
-import mcmc as mc
 import numpy as np
-
+import mcmc as mc
 
 def main():
+    
     obs = getObservations()
     sigma = getSigma(obs)
     emissionMat = getEmission(sigma)
     #G= []# graph dunno how it should be
     transMat = getTransitionMat( sigma, len(sigma))
-    print(transMat)
+    print(transMat) # transMat needs
 
 
 def getObservations():
@@ -18,8 +18,8 @@ def getObservations():
 
 def getSigma(obs):
     ## Setting up my prior beliefs and how many samples i want
-    mcmcSamples = MCMC_MH(obs, samples =100, mu_prior_mu=[0,0,0,0], mu_prior_sd=[1.,1.,1.,1.])
-    return get_sigma(mcmcSamples[-1]) # returns last switchsetting,for example ['L','R']
+    mcmcSamples = mc.MCMC_MH(obs, samples =100, mu_prior_mu=[0,0,0,0], mu_prior_sd=[1.,1.,1.,1.])
+    return mc.get_sigma(mcmcSamples[-1]) # returns last switchsetting,for example ['L','R']
 
 def getEmission(sigma):
     p = 0.05
@@ -44,3 +44,9 @@ def getTransitionMat(sigma,N, G= None): # The sigma is the same sequence for how
 def getLabelForEdge(node1, node2):
     #TODO: S
     return 'L'
+
+
+if __name__ == '__main__':
+    main()
+
+
